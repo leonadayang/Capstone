@@ -10,7 +10,8 @@
         android:icon="@drawable/dine_icon"
         android:title="@string/dine"/>
     <item
-        android:title="@string/book"/>
+        android:id="@+id/unclickableBooking"
+        android:title="@string/book" />
     <item
         android:id="@+id/products"
         android:icon="@drawable/products_icon"

@@ -12,13 +12,14 @@
     <string name="userName">Phil Nguyen</string>
     <string name="aboutUser">Hi I’m Phil, I’m an aspiring professional photographer!</string>
     <string name="follow">Follow</string>
-    <string name="message">Message</string>
+    <string name="contactInfo">Contact Info</string>
     <string name="viewAll">View all >>></string>
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="settings">Settings</string>
     <string name="profilePicture">Profile picture</string>
     <string name="editProfilePic">Edit Profile Picture</string>
+    <string name="backButton">Back</string>
 
     <!--ACTIVITY HISTORY-->
     <string name="activityHistory">Activity History</string>

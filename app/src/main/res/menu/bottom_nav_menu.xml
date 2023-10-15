@@ -11,7 +11,7 @@
         android:title="@string/dine"/>
     <item
         android:id="@+id/unclickableBooking"
-        android:title="@string/book" />
+        android:title="" />
     <item
         android:id="@+id/products"
         android:icon="@drawable/products_icon"

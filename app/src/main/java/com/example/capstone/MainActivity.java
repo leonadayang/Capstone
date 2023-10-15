@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.capstone.databinding.ActivityMainBinding;
-import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,9 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
 
-        //Navigation if-else
-        binding.bottomNavigationView.setOnItemReselectedListener(item -> {
+        //for the unclickable middle navigation button
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Menu bottom_nav_menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = bottom_nav_menu.findItem(R.id.unclickableBooking);
+        menuItem.setEnabled(false);
 
+
+        //Navigation if-else
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
 
             if (itemId == R.id.home) {
@@ -37,15 +43,12 @@ public class MainActivity extends AppCompatActivity {
             } else if (itemId == R.id.profile) {
                 replaceFragment(new ProfileFragment());
             }
+
+            return true;
         });
 
-        //Unclickable menu item
-        NavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        Menu bottom_nav_menu = bottomNavigationView.getMenu();
-        MenuItem itemToMakeUnclickable = bottom_nav_menu.findItem(R.id.unclickableBooking);
-        itemToMakeUnclickable.setEnabled(false);
-
     }
+
 
     //Fragments for Navigation
     private void replaceFragment(Fragment fragment) {
@@ -55,4 +58,5 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frameLayoutNavigation,fragment);
         fragmentTransaction.commit();
     }
+
 }

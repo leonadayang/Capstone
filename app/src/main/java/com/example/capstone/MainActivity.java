@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
     //Fragments for Navigation
     private void replaceFragment(Fragment fragment) {
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frameLayoutNavigation,fragment);
-        fragmentTransaction.commit();
+        FragmentManager fmProfileFragment = getSupportFragmentManager();
+        FragmentTransaction ftProfileFragment = fmProfileFragment.beginTransaction();
+        ftProfileFragment.replace(R.id.frameLayoutNavigation,fragment);
+        ftProfileFragment.commit();
     }
 
 }

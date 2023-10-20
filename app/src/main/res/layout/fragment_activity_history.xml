@@ -13,7 +13,7 @@
         android:background="@drawable/rounded_corner_bottom_right">
 
         <ImageButton
-            android:id="@+id/buttonBack"
+            android:id="@+id/buttonBackAH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
@@ -34,7 +34,7 @@
             android:textAlignment="textStart"
             android:textColor="@color/light"
             android:textSize="24sp"
-            app:layout_constraintLeft_toRightOf="@id/buttonBack"
+            app:layout_constraintLeft_toRightOf="@id/buttonBackAH"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

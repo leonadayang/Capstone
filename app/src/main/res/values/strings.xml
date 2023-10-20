@@ -15,6 +15,12 @@
     <string name="contactInfo">Contact Info</string>
     <string name="viewAll">View all >>></string>
 
+    <!--NOTIFICATIONS-->
+    <string name="notifications">Notifications</string>
+    <string name="today">Today</string>
+    <string name="date">Aug 27 at 8:00 PM</string>
+    <string name="notificationTitle">Trisha upvoted your review.</string>
+
     <!--CONTENT DESCRIPTIONS-->
     <string name="settings">Settings</string>
     <string name="profilePicture">Profile picture</string>

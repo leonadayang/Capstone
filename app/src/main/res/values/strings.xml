@@ -10,7 +10,7 @@
 
     <!--DASHBOARD TOURIST-->
     <string name="userName">Phil Nguyen</string>
-    <string name="aboutUser">Hi I’m Phil, I’m an aspiring professional photographer!</string>
+    <string name="bio">Hi I’m Phil, I’m an aspiring professional photographer!</string>
     <string name="follow">Follow</string>
     <string name="contactInfo">Contact Info</string>
     <string name="viewAll">View all >>></string>
@@ -20,6 +20,14 @@
     <string name="today">Today</string>
     <string name="date">Aug 27 at 8:00 PM</string>
     <string name="notificationTitle">Trisha upvoted your review.</string>
+
+    <!--SETTINGS POPUP-->
+    <string name="editUsername">Username</string>
+    <string name="editPassword">Password</string>
+    <string name="editBio">Bio</string>
+    <string name="editPhoneNumber">Phone number</string>
+    <string name="editEmail">Email</string>
+    <string name="editBirthday">Birthday</string>
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="settings">Settings</string>

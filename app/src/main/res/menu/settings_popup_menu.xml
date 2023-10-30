@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_username"
+        android:title="@string/editUsername"/>
+    <item
+        android:id="@+id/edit_password"
+        android:title="@string/editPassword"/>
+    <item
+        android:id="@+id/edit_bio"
+        android:title="@string/editBio"/>
+    <item
+        android:id="@+id/edit_phone"
+        android:title="@string/editPhoneNumber"/>
+    <item
+        android:id="@+id/edit_email"
+        android:title="@string/editEmail"/>
+    <item
+        android:id="@+id/edit_birthday"
+        android:title="@string/editBirthday"/>
+</menu>

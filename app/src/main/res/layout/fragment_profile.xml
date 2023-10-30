@@ -58,7 +58,8 @@
                 android:padding="10dp"
                 android:src="@drawable/settings_icon"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="showPopupMenu"/>
 
 
             <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -120,7 +121,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="20dp"
-                android:text="@string/aboutUser"
+                android:text="@string/bio"
                 android:textAlignment="center"
                 android:textColor="@color/darkBlue"
                 android:textSize="20sp"

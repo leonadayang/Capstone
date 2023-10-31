@@ -29,6 +29,11 @@
     <string name="editEmail">Email</string>
     <string name="editBirthday">Birthday</string>
 
+    <!--EDIT PROFILE PIC DIALOG BOX-->
+    <string name="labelEditProfilePic">Edit profile picture</string>
+    <string name="labelTakePhoto">Take a photo</string>
+    <string name="labelChoosePhoto">Choose from gallery</string>
+
     <!--CONTENT DESCRIPTIONS-->
     <string name="settings">Settings</string>
     <string name="profilePicture">Profile picture</string>

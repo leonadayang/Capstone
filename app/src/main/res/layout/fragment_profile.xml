@@ -58,8 +58,7 @@
                 android:padding="10dp"
                 android:src="@drawable/settings_icon"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:onClick="showPopupMenu"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -90,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:contentDescription="@string/editProfilePic"
-                    android:src="@drawable/camera"
+                    android:src="@drawable/camera_icon"
                     app:backgroundTint="@color/light35"
                     app:elevation="0dp"
                     app:layout_anchor="@id/profilePicture"

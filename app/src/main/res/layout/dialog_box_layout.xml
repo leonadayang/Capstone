@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_box_pp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/editProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/labelEditProfilePic"
+        android:textAlignment="center"
+        android:textColor="@color/darkBlue"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="bottom"
+            android:text="@string/labelTakePhoto"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/darkBlue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearChoosePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="bottom"
+            android:text="@string/labelChoosePhoto"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/darkBlue"/>
+    </LinearLayout>
+
+</LinearLayout>

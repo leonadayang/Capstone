@@ -24,7 +24,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ProfileFragment extends Fragment {
 
-    Button btnViewAll;
+    Button btnViewAll, btnContactInfo;
     ImageButton btnImage1, btnImage2, btnImage3, btnSettings;
     FloatingActionButton fabEditProfile;
 
@@ -42,6 +42,7 @@ public class ProfileFragment extends Fragment {
 
         //buttons
         btnSettings = view.findViewById(R.id.buttonSettings);
+        btnContactInfo = view.findViewById(R.id.buttonContactInfo);
         btnViewAll = view.findViewById(R.id.buttonViewAll);
         btnImage1 = view.findViewById(R.id.image1);
         btnImage2 = view.findViewById(R.id.image2);
@@ -52,7 +53,15 @@ public class ProfileFragment extends Fragment {
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showPopupMenu(view);
+                showPopupSettings(view);
+            }
+        });
+
+        //for contact info button
+        btnContactInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialogContactInfo(view);
             }
         });
 
@@ -60,9 +69,7 @@ public class ProfileFragment extends Fragment {
         btnViewAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fActivityHistory = new ActivityHistoryFragment();
-                FragmentTransaction ftActivityHistory = getActivity().getSupportFragmentManager().beginTransaction();
-                ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
+                goToActivityHistory(view);
             }
         });
 
@@ -70,25 +77,19 @@ public class ProfileFragment extends Fragment {
         btnImage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fActivityHistory = new ActivityHistoryFragment();
-                FragmentTransaction ftActivityHistory = getActivity().getSupportFragmentManager().beginTransaction();
-                ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
+                goToActivityHistory(view);
             }
         });
         btnImage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fActivityHistory = new ActivityHistoryFragment();
-                FragmentTransaction ftActivityHistory = getActivity().getSupportFragmentManager().beginTransaction();
-                ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
+                goToActivityHistory(view);
             }
         });
         btnImage3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fActivityHistory = new ActivityHistoryFragment();
-                FragmentTransaction ftActivityHistory = getActivity().getSupportFragmentManager().beginTransaction();
-                ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
+                goToActivityHistory(view);
             }
         });
 
@@ -96,16 +97,24 @@ public class ProfileFragment extends Fragment {
         fabEditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(view);
+                showDialogEditProfile(view);
             }
         });
 
         return view;
     }
 
+
+    //onclick of activity history cards
+    private void goToActivityHistory(View view) {
+        Fragment fActivityHistory = new ActivityHistoryFragment();
+        FragmentTransaction ftActivityHistory = getActivity().getSupportFragmentManager().beginTransaction();
+        ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
+    }
+
     //Popup menu for settings button
-    private void showPopupMenu(View v) {
-        PopupMenu popup = new PopupMenu(requireContext(), v);
+    private void showPopupSettings(View view) {
+        PopupMenu popup = new PopupMenu(requireContext(), view);
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -138,11 +147,24 @@ public class ProfileFragment extends Fragment {
         popup.show();
     }
 
-    //dialog box for edit profile pic
-    private void showDialog(View view) {
+    //dialog box for contact info
+    private void showDialogContactInfo(View view) {
         final Dialog dialog = new Dialog(requireContext());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_box_layout);
+        dialog.setContentView(R.layout.dialog_box_contact);
+
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
+    }
+
+    //dialog box for edit profile pic
+    private void showDialogEditProfile(View view) {
+        final Dialog dialog = new Dialog(requireContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_box_profilepic);
 
         LinearLayout takePhoto = dialog.findViewById(R.id.linearTakePhoto);
         LinearLayout choosePhoto = dialog.findViewById(R.id.linearChoosePhoto);

@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/poppins_extra_bold"
-                android:text="@string/userName"
+                android:text="@string/username"
                 android:textAlignment="center"
                 android:textColor="@color/light"
                 android:textSize="40sp"

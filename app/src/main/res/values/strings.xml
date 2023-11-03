@@ -9,7 +9,7 @@
     <string name="profile">Profile</string>
 
     <!--DASHBOARD TOURIST-->
-    <string name="userName">Phil Nguyen</string>
+    <string name="username">Phil Nguyen</string>
     <string name="bio">Hi I’m Phil, I’m an aspiring professional photographer!</string>
     <string name="follow">Follow</string>
     <string name="contactInfo">Contact Info</string>
@@ -21,7 +21,7 @@
     <string name="date">Aug 27 at 8:00 PM</string>
     <string name="notificationTitle">Trisha upvoted your review.</string>
 
-    <!--SETTINGS POPUP-->
+    <!--SETTINGS POPUP MENU-->
     <string name="editUsername">Username</string>
     <string name="editPassword">Password</string>
     <string name="editBio">Bio</string>
@@ -33,6 +33,12 @@
     <string name="labelEditProfilePic">Edit profile picture</string>
     <string name="labelTakePhoto">Take a photo</string>
     <string name="labelChoosePhoto">Choose from gallery</string>
+
+    <!--CONTACT INFO PIC DIALOG BOX-->
+    <string name="labelPhoneNumber">Contact No.</string>
+    <string name="phoneNumber">09876543210</string>
+    <string name="labelEmail">Email Address</string>
+    <string name="email">philnguyen@gmail.com</string>
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="settings">Settings</string>

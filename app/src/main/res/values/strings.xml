@@ -28,7 +28,7 @@
     <string name="email">philnguyen@gmail.com</string>
 
     <!--NOTIFICATIONS-->
-    <string name="notifications">Notifications</string>
+    <string name="labelNotifications">Notifications</string>
     <string name="today">Today</string>
     <string name="date">Aug 27 at 8:00 PM</string>
     <string name="notificationTitle">Trisha upvoted your review.</string>
@@ -43,6 +43,7 @@
     <string name="profilePicture">Profile picture</string>
     <string name="editProfilePic">Edit Profile Picture</string>
     <string name="backButton">Back</string>
+    <string name="labelMenu">Menu</string>
 
     <!--ACTIVITY HISTORY-->
     <string name="activityHistory">Activity History</string>
@@ -52,6 +53,27 @@
     <string name="review1">\t\tVisited Sampaloc Lake in San Pablo City, Laguna, and it was an absolute gem! The serene beauty of this natural wonder left me spellbound. The picturesque surroundings and the tranquil waters make it a perfect escape from the hustle and bustle of city life. I had the chance to take a relaxing boat ride, which allowed me to fully immerse myself in the breathtaking scenery. The local culture and hospitality were heartwarming, and I enjoyed sampling some delicious local cuisine nearby.</string>
     <string name="review2">\t\tFirst time in Casa de San Pablo and YOU have to go! It’s the cutest little spot with amazing food. This place is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again. They made us feel welcomed and gave us an amazing experience.</string>
     <string name="review3">\t\tThis place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty good, some classics and some twists, and for their prices it’s 100% worth it.</string>
+
+    <!--ADMIN-->
+    <string name="adminName">San Pablo Tourism Office</string>
+    <string name="labelAdmin">Admin</string>
+    <string name="labelDashboard">Dashboard</string>
+    <string name="labelReports">Reports</string>
+    <string name="labelMessage">Message</string>
+    <string name="labelPayment">Payment</string>
+    <string name="labelSignOut">Sign out</string>
+    <string name="labelTourStatus">Tour Status</string>
+    <string name="labelMostSearched">Most Searched</string>
+    <string name="labelAvailableNow">Available Now</string>
+    <string name="labelRatingsAndFeedbacks">Rating and Feedbacks</string>
+    <string name="labelCancellations">Cancellations</string>
+    <string name="labelBookingDetails">Booking Details</string>
+    <string name="labelRecentInquiries">Recent Inquiries</string>
+    <string name="mostSearched">20</string>
+    <string name="availableNow">46</string>
+    <string name="ratingsAndFeedbacks">5/5</string>
+    <string name="cancellations">47</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

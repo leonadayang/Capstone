@@ -27,10 +27,10 @@
             android:id="@+id/labelNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/notifications"
+            android:contentDescription="@string/labelNotifications"
             android:fontFamily="@font/poppins_semi_bold"
             android:padding="10dp"
-            android:text="@string/notifications"
+            android:text="@string/labelNotifications"
             android:textAlignment="textStart"
             android:textColor="@color/light"
             android:textSize="24sp"
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/notificationGreenBackground"
-        android:contentDescription="@string/notifications"
+        android:contentDescription="@string/labelNotifications"
         android:fillViewport="true">
 
         <LinearLayout

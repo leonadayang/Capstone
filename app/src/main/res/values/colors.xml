@@ -14,8 +14,11 @@
     <color name="light">#F2F3F5</color>
     <color name="dark">#F2F3F5</color>
 
+    <color name="red">#AC3E3E</color>
+
     <color name="light35">#9AF2F3F5</color>
     <color name="lightGray">#E4E4E4</color>
     <color name="gray">#BDBDBD</color>
+    <color name="darkGray">#8A8A8A</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

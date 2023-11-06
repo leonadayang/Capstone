@@ -179,26 +179,26 @@
 
         <!--        </LinearLayout>-->
 
-        <Button
-            android:id="@+id/buttonContactInfo"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:letterSpacing="0"
-            android:padding="10dp"
-            android:text="@string/contactInfo"
-            android:textAllCaps="false"
-            android:textColor="@color/darkBlue"
-            android:textSize="20sp"
-            app:cornerRadius="50dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/profileGreenBackground"
-            app:strokeColor="@color/blueGreenLighter"
-            app:strokeWidth="2dp" />
+<!--        <Button-->
+<!--            android:id="@+id/buttonContactInfo"-->
+<!--            style="?android:attr/buttonBarButtonStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:fontFamily="@font/poppins_semi_bold"-->
+<!--            android:letterSpacing="0"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="@string/contactInfo"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/darkBlue"-->
+<!--            android:textSize="20sp"-->
+<!--            app:cornerRadius="50dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/profileGreenBackground"-->
+<!--            app:strokeColor="@color/blueGreenLighter"-->
+<!--            app:strokeWidth="2dp" />-->
 
         <LinearLayout
             android:id="@+id/linearLabelActivity"
@@ -209,7 +209,7 @@
             android:paddingEnd="15dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonContactInfo">
+            app:layout_constraintTop_toBottomOf="@id/profileGreenBackground">
 
             <TextView
                 android:id="@+id/labelActivityHistory"

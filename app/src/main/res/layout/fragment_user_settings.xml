@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settingsGreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom_right">
+
+        <ImageButton
+            android:id="@+id/buttonBackUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/backButton"
+            android:padding="15dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelSettingsMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/activityHistory"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:padding="10dp"
+            android:text="@string/settings"
+            android:textAlignment="textStart"
+            android:textColor="@color/light"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/buttonBackUS"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settingsGreenBackground"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="70dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelOfUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/labelUsername"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/valueOfUsername"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/username"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfUsername" />
+
+                <TextView
+                    android:id="@+id/editTheUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="@string/labelEdit"
+                    android:textColor="@color/darkGray"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfUsername" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelOfPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/labelPassword"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/valueOfPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints="password"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/labelPassword"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/password"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfPassword" />
+
+                <TextView
+                    android:id="@+id/editThePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="@string/labelEdit"
+                    android:textColor="@color/darkGray"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfPassword" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelOfBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/labelBio"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/valueOfBio"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/bio"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfBio" />
+
+                <TextView
+                    android:id="@+id/editTheBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="@string/labelEdit"
+                    android:textColor="@color/darkGray"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfBio" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelOfPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/labelPhoneNumber"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/valueOfPhoneNumber"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/phoneNumber"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfPhoneNumber" />
+
+                <TextView
+                    android:id="@+id/editThePhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="@string/labelEdit"
+                    android:textColor="@color/darkGray"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfPhoneNumber" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelOfEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/labelEmail"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/valueOfEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/email"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfEmail" />
+
+                <TextView
+                    android:id="@+id/editTheEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="@string/labelEdit"
+                    android:textColor="@color/darkGray"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelOfEmail" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/buttonLogout"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:letterSpacing="0"
+                    android:padding="10dp"
+                    android:text="@string/logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/light"
+                    android:textSize="18sp"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="@color/light" />
+
+                <Button
+                    android:id="@+id/buttonDeleteAccount"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:letterSpacing="0"
+                    android:padding="10dp"
+                    android:text="@string/deleteAccount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/buttonLogout"
+                    app:rippleColor="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

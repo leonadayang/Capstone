@@ -26,18 +26,22 @@ public class ActivityHistoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_activity_history, container, false);
 
-        //onclick buttons
+        //buttons
         btnBackAH = view.findViewById(R.id.buttonBackAH);
 
         btnBackAH.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fProfile = new ProfileFragment();
-                FragmentTransaction ftProfile = getActivity().getSupportFragmentManager().beginTransaction();
-                ftProfile.replace(R.id.frameLayoutNavigation,fProfile).commit();
+                backButton(view);
             }
         });
 
         return view;
+    }
+
+    private void backButton (View view) {
+        Fragment fProfile = new ProfileFragment();
+        FragmentTransaction ftProfile = getActivity().getSupportFragmentManager().beginTransaction();
+        ftProfile.replace(R.id.frameLayoutNavigation,fProfile).commit();
     }
 }

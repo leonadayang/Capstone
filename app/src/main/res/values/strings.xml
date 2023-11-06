@@ -11,9 +11,21 @@
     <!--DASHBOARD TOURIST-->
     <string name="username">Phil Nguyen</string>
     <string name="bio">Hi I’m Phil, I’m an aspiring professional photographer!</string>
-    <string name="follow">Follow</string>
-    <string name="contactInfo">Contact Info</string>
     <string name="viewAll">View all >>></string>
+
+    <!--SETTINGS / TOURIST INFO-->
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="labelEdit">Edit</string>
+    <string name="labelUsername">Username</string>
+    <string name="labelPassword">Password</string>
+    <string name="labelBio">Bio</string>
+    <string name="labelPhoneNumber">Phone number</string>
+    <string name="labelEmail">Email Address</string>
+    <string name="password">passwordpassword</string>
+    <string name="phoneNumber">09876543210</string>
+    <string name="email">philnguyen@gmail.com</string>
 
     <!--NOTIFICATIONS-->
     <string name="notifications">Notifications</string>
@@ -21,27 +33,13 @@
     <string name="date">Aug 27 at 8:00 PM</string>
     <string name="notificationTitle">Trisha upvoted your review.</string>
 
-    <!--SETTINGS POPUP MENU-->
-    <string name="editUsername">Username</string>
-    <string name="editPassword">Password</string>
-    <string name="editBio">Bio</string>
-    <string name="editPhoneNumber">Phone number</string>
-    <string name="editEmail">Email</string>
-    <string name="editBirthday">Birthday</string>
-
     <!--EDIT PROFILE PIC DIALOG BOX-->
     <string name="labelEditProfilePic">Edit profile picture</string>
     <string name="labelTakePhoto">Take a photo</string>
     <string name="labelChoosePhoto">Choose from gallery</string>
 
-    <!--CONTACT INFO PIC DIALOG BOX-->
-    <string name="labelPhoneNumber">Contact No.</string>
-    <string name="phoneNumber">09876543210</string>
-    <string name="labelEmail">Email Address</string>
-    <string name="email">philnguyen@gmail.com</string>
 
     <!--CONTENT DESCRIPTIONS-->
-    <string name="settings">Settings</string>
     <string name="profilePicture">Profile picture</string>
     <string name="editProfilePic">Edit Profile Picture</string>
     <string name="backButton">Back</string>

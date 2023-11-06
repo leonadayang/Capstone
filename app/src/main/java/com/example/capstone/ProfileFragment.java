@@ -24,7 +24,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ProfileFragment extends Fragment {
 
-    Button btnViewAll, btnContactInfo;
+    Button btnViewAll;
     ImageButton btnImage1, btnImage2, btnImage3, btnSettings;
     FloatingActionButton fabEditProfile;
 
@@ -42,7 +42,6 @@ public class ProfileFragment extends Fragment {
 
         //buttons
         btnSettings = view.findViewById(R.id.buttonSettings);
-        btnContactInfo = view.findViewById(R.id.buttonContactInfo);
         btnViewAll = view.findViewById(R.id.buttonViewAll);
         btnImage1 = view.findViewById(R.id.image1);
         btnImage2 = view.findViewById(R.id.image2);
@@ -53,15 +52,7 @@ public class ProfileFragment extends Fragment {
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showPopupSettings(view);
-            }
-        });
-
-        //for contact info button
-        btnContactInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDialogContactInfo(view);
+                goToSettings(view);
             }
         });
 
@@ -112,52 +103,10 @@ public class ProfileFragment extends Fragment {
         ftActivityHistory.replace(R.id.frameLayoutNavigation,fActivityHistory).commit();
     }
 
-    //Popup menu for settings button
-    private void showPopupSettings(View view) {
-        PopupMenu popup = new PopupMenu(requireContext(), view);
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                int itemId = item.getItemId();
-
-                if (itemId == R.id.edit_username) {
-                    Toast.makeText(requireContext(), "Username clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId == R.id.edit_password) {
-                    Toast.makeText(requireContext(), "Password clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId == R.id.edit_bio) {
-                    Toast.makeText(requireContext(), "Bio clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId == R.id.edit_phone) {
-                    Toast.makeText(requireContext(), "Phone number clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId == R.id.edit_email) {
-                    Toast.makeText(requireContext(), "Email clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId == R.id.edit_birthday) {
-                    Toast.makeText(requireContext(), "Birthday clicked", Toast.LENGTH_SHORT).show();
-                    return true;
-                }
-                 return true;
-            }
-        });
-
-        popup.inflate(R.menu.settings_popup_menu);
-        popup.show();
-    }
-
-    //dialog box for contact info
-    private void showDialogContactInfo(View view) {
-        final Dialog dialog = new Dialog(requireContext());
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_box_contact);
-
-        dialog.show();
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialog.getWindow().setGravity(Gravity.BOTTOM);
+    private void goToSettings(View view) {
+        Fragment fUserSettingsFragment = new UserSettingsFragment();
+        FragmentTransaction ftUserSettings = getActivity().getSupportFragmentManager().beginTransaction();
+        ftUserSettings.replace(R.id.frameLayoutNavigation,fUserSettingsFragment).commit();
     }
 
     //dialog box for edit profile pic

@@ -26,6 +26,7 @@
     <string name="password">passwordpassword</string>
     <string name="phoneNumber">09876543210</string>
     <string name="email">philnguyen@gmail.com</string>
+    <string name="save">Save</string>
 
     <!--NOTIFICATIONS-->
     <string name="labelNotifications">Notifications</string>

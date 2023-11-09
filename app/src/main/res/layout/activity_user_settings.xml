@@ -361,7 +361,6 @@
                     android:textColor="@color/light"
                     android:textSize="18sp"
                     app:cornerRadius="50dp"
-                    app:layout_constraintHorizontal_bias="0.533"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/buttonLogout"

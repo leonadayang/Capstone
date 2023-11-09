@@ -1,48 +1,39 @@
 package com.example.capstone;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserSettingsFragment extends Fragment {
+public class UserSettings extends AppCompatActivity {
 
+    //buttons and clickable
     ImageButton btnBackUS;
     TextView txtEditUsername, txtEditPassword, txtEditBio, txtEditPhoneNumber, txtEditEmail;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
+        setContentView(R.layout.activity_user_settings);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+        //find view by id
+        btnBackUS = findViewById(R.id.buttonBackUS);
+        txtEditUsername = findViewById(R.id.editTheUsername);
+        txtEditPassword = findViewById(R.id.editThePassword);
+        txtEditBio = findViewById(R.id.editTheBio);
+        txtEditPhoneNumber = findViewById(R.id.editThePhoneNumber);
+        txtEditEmail = findViewById(R.id.editTheEmail);
 
-        View view = inflater.inflate(R.layout.fragment_user_settings, container, false);
-
-        //buttons and clickable
-        btnBackUS = view.findViewById(R.id.buttonBackUS);
-        txtEditUsername = view.findViewById(R.id.editTheUsername);
-        txtEditPassword = view.findViewById(R.id.editThePassword);
-        txtEditBio = view.findViewById(R.id.editTheBio);
-        txtEditPhoneNumber = view.findViewById(R.id.editThePhoneNumber);
-        txtEditEmail = view.findViewById(R.id.editTheEmail);
-
+        //onclick
         btnBackUS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                backButton(view);
+                onBackPressed();
             }
         });
-
         txtEditUsername.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,17 +64,9 @@ public class UserSettingsFragment extends Fragment {
 
             }
         });
-
-        return view;
-    }
-
-    private void backButton (View view) {
-        Fragment fProfile = new ProfileFragment();
-        FragmentTransaction ftProfile = getActivity().getSupportFragmentManager().beginTransaction();
-        ftProfile.replace(R.id.frameLayoutNavigation,fProfile).commit();
     }
 
     private void showDialogEditUsername (View view) {
-        Toast.makeText(requireContext(), "Edit is clicked", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Edit is clicked", Toast.LENGTH_SHORT).show();
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserSettingsFragment">
+    tools:context=".UserSettings">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/settingsGreenBackground"
@@ -50,22 +50,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="20dp"
-            android:paddingBottom="70dp">
+            android:paddingBottom="20dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintUsername"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/labelOfUsername"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/labelUsername"
-                    android:textColor="@color/blueGreen"
+                    android:textColor="@color/lighterBlack"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -78,10 +79,9 @@
                     android:ellipsize="end"
                     android:fontFamily="@font/poppins_regular"
                     android:maxLines="1"
-                    android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/username"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/labelOfUsername" />
@@ -96,27 +96,28 @@
                     android:gravity="end"
                     android:padding="15dp"
                     android:text="@string/labelEdit"
-                    android:textColor="@color/darkGray"
+                    android:textColor="@color/blueGreen"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfUsername" />
+                    app:layout_constraintTop_toTopOf="@id/labelOfUsername" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/labelOfPassword"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/labelPassword"
-                    android:textColor="@color/blueGreen"
+                    android:textColor="@color/lighterBlack"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -134,10 +135,9 @@
                     android:hint="@string/labelPassword"
                     android:inputType="textPassword"
                     android:longClickable="false"
-                    android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/password"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/labelOfPassword" />
@@ -152,28 +152,29 @@
                     android:gravity="end"
                     android:padding="15dp"
                     android:text="@string/labelEdit"
-                    android:textColor="@color/darkGray"
+                    android:textColor="@color/blueGreen"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfPassword" />
+                    app:layout_constraintTop_toTopOf="@id/labelOfPassword" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintBio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/labelOfBio"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/labelBio"
-                    android:textColor="@color/blueGreen"
+                    android:textColor="@color/lighterBlack"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -189,7 +190,7 @@
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/bio"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/labelOfBio" />
@@ -204,27 +205,28 @@
                     android:gravity="end"
                     android:padding="15dp"
                     android:text="@string/labelEdit"
-                    android:textColor="@color/darkGray"
+                    android:textColor="@color/blueGreen"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfBio" />
+                    app:layout_constraintTop_toTopOf="@id/labelOfBio" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintPhoneNumber"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/labelOfPhoneNumber"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/labelPhoneNumber"
-                    android:textColor="@color/blueGreen"
+                    android:textColor="@color/lighterBlack"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -240,7 +242,7 @@
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/phoneNumber"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/labelOfPhoneNumber" />
@@ -255,27 +257,28 @@
                     android:gravity="end"
                     android:padding="15dp"
                     android:text="@string/labelEdit"
-                    android:textColor="@color/darkGray"
+                    android:textColor="@color/blueGreen"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfPhoneNumber" />
+                    app:layout_constraintTop_toTopOf="@id/labelOfPhoneNumber" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/labelOfEmail"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/labelEmail"
-                    android:textColor="@color/blueGreen"
+                    android:textColor="@color/lighterBlack"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -291,7 +294,7 @@
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/email"
-                    android:textColor="@color/skyBlue"
+                    android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/labelOfEmail" />
@@ -306,11 +309,11 @@
                     android:gravity="end"
                     android:padding="15dp"
                     android:text="@string/labelEdit"
-                    android:textColor="@color/darkGray"
+                    android:textColor="@color/blueGreen"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfEmail" />
+                    app:layout_constraintTop_toTopOf="@id/labelOfEmail" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -326,19 +329,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/red"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:letterSpacing="0"
                     android:padding="10dp"
                     android:text="@string/logout"
                     android:textAllCaps="false"
-                    android:textColor="@color/light"
+                    android:textColor="@color/darkerRed"
                     android:textSize="18sp"
                     app:cornerRadius="50dp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:rippleColor="@color/light" />
+                    app:rippleColor="@color/darkerRed"
+                    app:strokeColor="@color/darkerRed"
+                    app:strokeWidth="1dp" />
 
                 <Button
                     android:id="@+id/buttonDeleteAccount"
@@ -347,21 +352,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@color/darkerRed"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:letterSpacing="0"
                     android:padding="10dp"
                     android:text="@string/deleteAccount"
                     android:textAllCaps="false"
-                    android:textColor="@color/red"
+                    android:textColor="@color/light"
                     android:textSize="18sp"
                     app:cornerRadius="50dp"
+                    app:layout_constraintHorizontal_bias="0.533"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/buttonLogout"
-                    app:rippleColor="@color/red"
-                    app:strokeColor="@color/red"
-                    app:strokeWidth="1dp" />
+                    app:rippleColor="@color/light" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

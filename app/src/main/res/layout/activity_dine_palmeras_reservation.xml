@@ -378,6 +378,7 @@
             android:fontFamily="@font/poppins_extra_bold"
             android:padding="16sp"
             android:text="@string/confirm"
+            android:background="@drawable/rounded_corners_50"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

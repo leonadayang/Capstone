@@ -4,6 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lighterBlack">#141414</color>
 
+    <color name="blue">#2CA1BF</color>
+    <color name="blueText">#0E577E</color>
     <color name="darkBlue">#06435F</color>
     <color name="blueGreen">#1A9AB7</color>
     <color name="blueGreenLighter">#40C0D8</color>

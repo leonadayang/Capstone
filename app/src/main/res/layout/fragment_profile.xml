@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@color/transparent"
-                android:contentDescription="@string/settings"
+                android:contentDescription="@string/labelSettings"
                 android:padding="10dp"
                 android:src="@drawable/settings_icon"
                 app:layout_constraintRight_toRightOf="parent"

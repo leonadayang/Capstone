@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DineAllFragment">
+
+<!--HOT DEALS SECTION-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hotDealsConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/mostPopularConstraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtHotDeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/deal"
+                android:textColor="@color/blueText"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hotSulyap"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="18sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgHotDealsResto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto1" />
+
+                        <TextView
+                            android:id="@+id/nameHotDealsResto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/sulyap"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hotCasa"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="18sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgHotDealsResto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto2" />
+
+                        <TextView
+                            android:id="@+id/nameHotDealsResto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/casa"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hotPalmeras"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="18sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgHotDealsResto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto3" />
+
+                        <TextView
+                            android:id="@+id/nameHotDealsResto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/palmeras"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--POPULAR SECTION-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mostPopularConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/mostPreferredConstraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotDealsConstraint">
+
+            <TextView
+                android:id="@+id/txtMostPopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/popular"
+                android:textColor="@color/blueText"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/popularPalmeras"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPopularResto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto3" />
+
+                        <TextView
+                            android:id="@+id/nameMostPopularResto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/palmeras"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/popularSulyap"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPopularResto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto1" />
+
+                        <TextView
+                            android:id="@+id/nameMostPopularResto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/sulyap"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/popularCasa"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPopularResto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto2" />
+
+                        <TextView
+                            android:id="@+id/nameMostPopularResto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/casa"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--PREFERRED SECTION-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mostPreferredConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostPopularConstraint">
+
+            <TextView
+                android:id="@+id/txtMostPreferred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/prefer"
+                android:textColor="@color/blueText"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/preferCasa"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPreferredResto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto2" />
+
+                        <TextView
+                            android:id="@+id/nameMostPreferredResto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/casa"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/preferPalmeras"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPreferredResto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto3" />
+
+                        <TextView
+                            android:id="@+id/nameMostPreferredResto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/palmeras"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/preferSulyap"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgMostPreferredResto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto1" />
+
+                        <TextView
+                            android:id="@+id/nameMostPreferredResto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/sulyap"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

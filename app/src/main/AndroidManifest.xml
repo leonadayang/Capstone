@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Capstone"
         tools:targetApi="31">
         <activity
+            android:name=".DineCasaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DineSulyapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinePalmerasReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinePalmerasActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserNotifications"
             android:exported="false" />
         <activity

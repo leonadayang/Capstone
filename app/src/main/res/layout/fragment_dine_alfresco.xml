@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DineAlfrescoFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ALFrescoConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtAlFresco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/alFresco"
+                android:textColor="@color/blueText"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/alFrescoCasa"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgAlFresco1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto2" />
+
+                        <TextView
+                            android:id="@+id/nameAlFresco1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/casa"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/alFrescoPalmeras"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgAlFresco2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto3" />
+
+                        <TextView
+                            android:id="@+id/nameAlFresco2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/palmeras"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/alFrescoSulyap"
+                        android:layout_width="235sp"
+                        android:layout_height="155sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="48sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="15sp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgAlFresco3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="25sp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/resto1" />
+
+                        <TextView
+                            android:id="@+id/nameAlFresco3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="14sp"
+                            android:text="@string/sulyap"
+                            android:textColor="@color/lighterBlack"
+                            android:textSize="12sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">SanPabLOOK</string>
+    <string name="userLocation">18D Werner Schetelig Ave</string>
+    <string name="location">Location</string>
+    <string name="hotel">Hotel</string>
+    <string name="resort">Resort</string>
+    <string name="bnb">BnB</string>
+    <string name="motel">Motel</string>
+    <string name="inn">Inn</string>
+    <string name="deals">HOT DEALS</string>
+    <string name="meding">Tahanan ni Aling Meding</string>
+    <string name="medingPrice">₱1,099</string>
+    <string name="casa">Casa San Pablo</string>
+    <string name="casaPrice">₱3,900</string>
+    <string name="popular">MOST POPULAR</string>
+    <string name="preferred">MOST PREFERRED</string>
+    <string name="searchHint">Tara na! Saan tayo?</string>
+    <string name="palmera">Casa Palmera</string>
+    <string name="palmeraPrice">₱1,345</string>
+    <string name="diamond">Blue Diamond Court</string>
+    <string name="mockRating">4.69</string>
+    <string name="mockReview">420 Reviews</string>
+    <string name="accredited">Accredited</string>
+    <string name="casaLocation">Colage Avenue, San Pablo City, Laguna</string>
+    <string name="about">About</string>
+    <string name="aboutCasa">Casa San Pablo is within a sprawling family estate where you can reconnect with your loved ones — and yourself — through our unique, creative and cultural experiences. We offer family getaways, relaxing escapes, wedding party venues, team building spaces, celebrations, and creative wellness activities.</string>
+    <string name="yourHost">Meet your host</string>
+    <string name="line">____________________________________</string>
+    <string name="casaProfileRating">4.54 ★ rating</string>
+    <string name="casaProfileReviews">420 reviews</string>
+    <string name="casaProfileHosting">6 months hosting</string>
+    <string name="casaProfileInfo">We love to travel and share our experiences to others. We aim to assist and attract more tourists to visit the same place we’ve been.</string>
+    <string name="message">Message</string>
+    <string name="offers">What this place offers</string>
+    <string name="casaLock">Lock on bedroom door</string>
+    <string name="wifi">Wifi</string>
+    <string name="bednbfast">Bed and Breakfast</string>
+    <string name="park">Free parking on premise</string>
+    <string name="cctv">Security cameras on property</string>
+    <string name="pin">Events Place</string>
+    <string name="cafe">Cafe</string>
+    <string name="stayRest">Where you\'ll be resting</string>
+    <string name="casaReview1">Had a great stay at Mr. Jak’s place. It is quiet and peaceful. Me and my part...</string>
+    <string name="casaReview2">So amazing! I love this place! I am alert, awake, thrilled, alive, enthusiastic. The food...</string>
+    <string name="showmore">Show more >></string>
+    <string name="availability">Availability</string>
+    <string name="casaAvailable">September 9-24</string>
+    <string name="cancel">Cancellation Policy</string>
+    <string name="cancelInfo">This booking is non-refundable and non-negotiable. Review the Host’s full cancellation policy which applies even if you cancel for illness or disruptions caused by COVID-19.</string>
+    <string name="houserules">House Rules</string>
+    <string name="houserulesinfo">Check in : 12:00NN onwards
+        \nCheckout before 10:00AM
+        \n10 guests maximum</string>
+    <string name="safetynproperty">Safety &amp; Property</string>
+    <string name="safetynpropertyinfo">Security guards 24/7
+        \nSecurity camera / recording device
+        \n1 room = 1 vehicle
+        \nLock-on-door rooms</string>
+</resources>

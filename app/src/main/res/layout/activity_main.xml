@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/searchbarConstraint"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="#2CA1BF">
+
+        <TextView
+            android:id="@+id/mainLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="285dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/location"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/userLocation"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/mainLocation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mainLocation"
+            app:layout_constraintTop_toBottomOf="@+id/mainLocation" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="24sp"
+            android:background="@drawable/searchbarbg"
+            android:drawableStart="@drawable/ic_search"
+            android:ems="10"
+            android:hint="@string/searchHint"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:padding="14sp"
+            android:textColor="@color/hintColor"
+            app:layout_constraintEnd_toEndOf="@+id/subLocation"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="@+id/subLocation"
+            app:layout_constraintTop_toBottomOf="@+id/subLocation"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/textHandle"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginTop="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/rounded_left_corner"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/bnb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/bnb"
+            android:textAlignment="center"
+            android:textColor="@color/unselectedText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/resort"
+            app:layout_constraintTop_toTopOf="@+id/textHandle" />
+
+        <TextView
+            android:id="@+id/inn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/inn"
+            android:textAlignment="center"
+            android:textColor="@color/unselectedText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/motel"
+            app:layout_constraintTop_toTopOf="@+id/textHandle" />
+
+        <TextView
+            android:id="@+id/hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/hotel"
+            android:textAlignment="center"
+            android:textColor="@color/selectedText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textHandle"
+            app:layout_constraintTop_toTopOf="@+id/textHandle" />
+
+        <TextView
+            android:id="@+id/resort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/resort"
+            android:textAlignment="center"
+            android:textColor="@color/unselectedText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/hotel"
+            app:layout_constraintTop_toTopOf="@+id/textHandle" />
+
+        <TextView
+            android:id="@+id/motel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/motel"
+            android:textAlignment="center"
+            android:textColor="@color/unselectedText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/bnb"
+            app:layout_constraintTop_toTopOf="@+id/textHandle" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <!-- Hot Deals -->
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/dealsConstraint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtHotDeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/deals"
+            android:textColor="@color/promoText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="188dp"
+            android:layout_marginTop="16sp"
+            android:scrollbarThumbHorizontal="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <!-- Tahanan ni Aling Meding -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medingCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/medingImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/tahananmedingimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/medingText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/meding"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/medingImg" />
+
+                <TextView
+                    android:id="@+id/medingPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/medingPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/medingText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Casa San Pablo -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/casaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/casaImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/casasanpabloimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/casaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/casa"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaImg" />
+
+                <TextView
+                    android:id="@+id/casaPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/casaPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+        </HorizontalScrollView>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <!-- Most Popular -->
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/popularConstraint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtMostPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/popular"
+            android:textColor="@color/promoText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="188dp"
+            android:layout_marginTop="16sp"
+            android:scrollbarThumbHorizontal="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <!-- Casa Palmera -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/palmeraImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/casapalmeraimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/palmeraText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmera"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraImg" />
+
+                <TextView
+                    android:id="@+id/palmeraPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmeraPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Blue Diamond Court -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/diamondImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/bluediamondimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/diamondText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/diamond"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/diamondImg" />
+
+                <TextView
+                    android:id="@+id/diamondPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmeraPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/diamondText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+          </LinearLayout>
+        </HorizontalScrollView>
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <!-- Most Preferred -->
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/preferredConstraint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtMostPreferred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/preferred"
+            android:textColor="@color/promoText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="188dp"
+            android:layout_marginTop="16sp"
+            android:scrollbarThumbHorizontal="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <!-- Casa Palmera -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/palmeraImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/casapalmeraimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/palmeraText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmera"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraImg" />
+
+                <TextView
+                    android:id="@+id/palmeraPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmeraPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Blue Diamond Court -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="18sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15sp">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/diamondImg"
+                    android:layout_width="186dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/bluediamondimg"
+                    android:importantForAccessibility="no"
+                    android:paddingBottom="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/diamondText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/diamond"
+                    android:textColor="@color/cardColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/diamondImg" />
+
+                <TextView
+                    android:id="@+id/diamondPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="14sp"
+                    android:text="@string/palmeraPrice"
+                    android:textColor="@color/priceColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/diamondText" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+          </LinearLayout>
+        </HorizontalScrollView>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+ <!--   <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/location"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/SubLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/userLocation"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="52dp" /> -->
+
+</ScrollView>

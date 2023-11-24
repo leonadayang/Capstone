@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "round_corner">
+        <item name = "cornerSize">10%</item>
+    </style>
+    <style name = "round_corners">
+        <item name = "cornerSizeBottomLeft">25%</item>
+    </style>
+    <style name = "round">
+        <item name = "cornerSize">50%</item>
+    </style>
+    <style name = "review">
+        <item name = "cornerSize">10%</item>
+    </style>
+</resources>

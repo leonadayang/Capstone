@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#2CA1BF</color>
+    <color name="rectangle_color">#FFFEFE</color>
+    <color name="selectedText">#2CA1BF</color>
+    <color name="unselectedText">#BDBDBD</color>
+    <color name="priceColor">#1A9AB7</color>
+    <color name="promoText">#0E577E</color>
+    <color name="cardColor">#1C1B1B</color>
+    <color name="hintColor">#141414</color>
+    <color name="vectorColor">#1A9AB7</color>
+    <color name="infoText">#141313</color>
+</resources>

@@ -8,7 +8,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class HotelMain extends AppCompatActivity {
 
 
     private CardView casaCard;
@@ -21,13 +21,16 @@ public class MainActivity extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         CardView casaCard = (CardView)findViewById(R.id.casaCard);
-        casaCard.setOnClickListener((View view) -> {
-            openActivity2();
+        casaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHotelCasa();
+            }
         });
     }
 
-    public void openActivity2() {
-        Intent intent = new Intent(this, Activity2.class);
+    public void openHotelCasa() {
+        Intent intent = new Intent(this, HotelCasa.class);
         startActivity(intent);
     }
 }

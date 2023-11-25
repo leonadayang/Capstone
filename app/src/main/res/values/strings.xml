@@ -57,4 +57,11 @@
         \n1 room = 1 vehicle
         \nLock-on-door rooms</string>
     <string name="booknow">BOOK NOW</string>
+    <string name="medingLocation">Dagatan Blvd, San Pablo City, Laguna</string>
+    <string name="aboutMeding">Finding an ideal luxury small hotel in San Pablo City does not have to be difficult. Welcome to Tahanan ni Aling Meding, a nice option for travelers like you. Tahanan ni Aling Meding puts the best of San Pablo City at your fingertips, making your stay both relaxing and enjoyable.</string>
+    <string name="medingProfileInfo">Come and visit ang Tahanan ni Aling Meding, we offer guests a comfortable and secured stay at reasonable prices.</string>
+    <string name="houserulesinfoMeding">Check in : 2:00 PM
+        \nCheck-out: 12:00 NN
+        \n2 guests maximum</string>
+    <string name="medingAvailable">Always open</string>
 </resources>

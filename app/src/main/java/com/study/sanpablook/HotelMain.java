@@ -15,6 +15,7 @@ public class HotelMain extends AppCompatActivity {
 
 
     private CardView casaCard;
+    private CardView medingCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +31,22 @@ public class HotelMain extends AppCompatActivity {
                 openHotelCasa();
             }
         });
+        CardView medingCard = (CardView)findViewById(R.id.medingCard);
+        medingCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHotelMeding();
+            }
+        });
     }
 
     public void openHotelCasa() {
         Intent intent = new Intent(this, HotelCasa.class);
+        startActivity(intent);
+    }
+
+    public void openHotelMeding() {
+        Intent intent = new Intent(this, HotelMeding.class);
         startActivity(intent);
     }
 }

@@ -31,7 +31,7 @@
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="0dp">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/casaWhole"
                     android:layout_width="match_parent"
                     android:layout_height="350sp"
@@ -39,7 +39,8 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/casasanpablowhole" />
+                    app:shapeAppearanceOverlay="@style/round_corners"
+                    app:srcCompat="@drawable/tahanannimedinghead" />
 
                 <TextView
                     android:id="@+id/casaTxt"
@@ -49,7 +50,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="24dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="@string/casa"
+                    android:text="@string/meding"
                     android:textColor="@color/promoText"
                     android:textSize="24sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +167,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="@string/casaLocation"
+                    android:text="@string/medingLocation"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/starIc" />
@@ -202,7 +203,7 @@
                     android:layout_marginEnd="24dp"
                     android:fontFamily="@font/poppins_regular"
                     android:justificationMode="inter_word"
-                    android:text="@string/aboutCasa"
+                    android:text="@string/aboutMeding"
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -241,7 +242,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/stayHost"
                     app:shapeAppearanceOverlay="@style/round"
-                    app:srcCompat="@drawable/casaprofile"
+                    app:srcCompat="@drawable/tahanannimedingprofile"
                     app:strokeColor="#99DDE7"
                     app:strokeWidth="10sp" />
 
@@ -253,7 +254,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="@string/casa"
+                    android:text="@string/meding"
                     android:textAlignment="center"
                     android:textColor="@color/promoText"
                     android:textSize="26sp"
@@ -315,7 +316,7 @@
                     android:layout_marginEnd="24dp"
                     android:fontFamily="@font/poppins_regular"
                     android:justificationMode="inter_word"
-                    android:text="@string/casaProfileInfo"
+                    android:text="@string/medingProfileInfo"
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -559,7 +560,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="2sp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="@string/casaLocation"
+                    android:text="@string/medingLocation"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/stayResting" />
@@ -764,33 +765,33 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/casaAvail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="24dp"
-                android:fontFamily="@font/poppins_light"
-                android:text="@string/casaAvailable"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/stayAvail" />
+                <TextView
+                    android:id="@+id/casaAvail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/medingAvailable"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayAvail" />
 
-            <View
-                android:id="@+id/line7"
-                android:layout_width="380dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/darker_gray"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/casaAvail" />
+                <View
+                    android:id="@+id/line7"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaAvail" />
 
-            <!-- Cancellation -->
+                <!-- Cancellation -->
 
                 <TextView
                     android:id="@+id/stayCancel"
@@ -858,7 +859,7 @@
                     android:layout_marginTop="6dp"
                     android:layout_marginEnd="24dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="@string/houserulesinfo"
+                    android:text="@string/houserulesinfoMeding"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -928,7 +929,7 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="₱ 3,900 / night"
+                android:text="₱ 3,864 / night"
                 android:textColor="#000000"
                 android:textSize="20dp"
                 app:layout_constraintEnd_toStartOf="@+id/reserveNowBtn1"

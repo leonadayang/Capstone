@@ -7,14 +7,14 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/editBio"
+        android:id="@+id/deleteAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="@font/poppins_semi_bold"
-        android:text="@string/labelBio"
+        android:text="@string/deleteAccount"
         android:textAlignment="center"
-        android:textColor="@color/darkBlue"
+        android:textColor="@color/darkerRed"
         android:textSize="20sp" />
 
     <ScrollView
@@ -23,24 +23,31 @@
         android:fillViewport="true">
 
         <LinearLayout
-            android:id="@+id/linearBio"
+            android:id="@+id/linearDelete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/typeDeleteAccount"
+                android:textColor="@color/lighterBlack"
+                android:textSize="17sp"/>
+
             <EditText
-                android:id="@+id/editTextBio"
+                android:id="@+id/editTextDeleteAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:ems="15"
+                android:maxLines="1"
+                android:maxLength="20"
                 android:fontFamily="@font/poppins_regular"
                 android:inputType="textMultiLine"
-                android:maxLength="150"
-                android:maxLines="5"
                 android:paddingTop="20dp"
-                android:text="@string/bio"
+                android:hint="@string/hintDeleteAccount"
                 android:textColor="@color/lighterBlack"
                 android:textSize="15sp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -54,15 +61,15 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonSave"
+                    android:id="@+id/buttonConfirm"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:backgroundTint="@color/blue"
+                    android:backgroundTint="@color/darkerRed"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:letterSpacing="0"
                     android:padding="10dp"
-                    android:text="@string/labelSave"
+                    android:text="@string/labelConfirm"
                     android:textAllCaps="false"
                     android:textColor="@color/light"
                     android:textSize="15sp"
@@ -80,11 +87,11 @@
                     android:padding="10dp"
                     android:text="@string/labelCancel"
                     android:textAllCaps="false"
-                    android:textColor="@color/blue"
+                    android:textColor="@color/darkerRed"
                     android:textSize="15sp"
                     app:cornerRadius="50dp"
-                    app:rippleColor="@color/blue"
-                    app:strokeColor="@color/blue"
+                    app:rippleColor="@color/darkerRed"
+                    app:strokeColor="@color/darkerRed"
                     app:strokeWidth="1dp" />
             </LinearLayout>
         </LinearLayout>

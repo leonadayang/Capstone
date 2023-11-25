@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@null"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,38 +64,25 @@
 
             <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:id="@+id/coordinatorLayoutProfilePic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/labelProfile">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/profilePicture"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="10dp"
                     android:contentDescription="@string/profilePicture"
-                    android:src="@drawable/profile_pic"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/profile_pic"
                     app:fabCradleMargin="0dp"
                     app:fabCradleVerticalOffset="0dp"
                     app:shapeAppearanceOverlay="@style/circular"
                     app:strokeColor="@color/transparent"
                     app:strokeWidth="5dp" />
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fabEditProfilePicture"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:contentDescription="@string/editProfilePic"
-                    android:src="@drawable/camera_icon"
-                    app:backgroundTint="@color/light35"
-                    app:elevation="0dp"
-                    app:layout_anchor="@id/profilePicture"
-                    app:layout_anchorGravity="bottom|right"
-                    app:maxImageSize="30dp" />
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
             <TextView
@@ -244,6 +232,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fillViewport="true"
+            android:scrollbarThumbHorizontal="@null"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/linearLabelActivity">

@@ -7,7 +7,6 @@
     <color name="blue">#2CA1BF</color>
     <color name="blueText">#0E577E</color>
     <color name="darkBlue">#06435F</color>
-    <color name="blueGreen">#2CA1BF</color>
     <color name="blueGreenLighter">#40C0D8</color>
     <color name="skyBlue">#77CFF1</color>
     <color name="aqua">#74E9D9</color>
@@ -19,6 +18,7 @@
     <color name="dark">#F2F3F5</color>
 
     <color name="darkerRed">#D11A2A</color>
+    <color name="brighterGreen">#20B51D</color>
 
     <color name="light35">#9AF2F3F5</color>
     <color name="lightGray">#E4E4E4</color>

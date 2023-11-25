@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:ems="15"
-            android:maxLines="10"
+            android:maxLines="1"
+            android:maxLength="11"
             android:fontFamily="@font/poppins_regular"
             android:inputType="phone|number"
             android:paddingTop="20dp"
@@ -52,7 +53,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:backgroundTint="@color/blueGreen"
+                android:backgroundTint="@color/blue"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:letterSpacing="0"
                 android:padding="10dp"
@@ -74,11 +75,11 @@
                 android:padding="10dp"
                 android:text="@string/labelCancel"
                 android:textAllCaps="false"
-                android:textColor="@color/blueGreen"
+                android:textColor="@color/blue"
                 android:textSize="15sp"
                 app:cornerRadius="50dp"
-                app:rippleColor="@color/blueGreen"
-                app:strokeColor="@color/blueGreen"
+                app:rippleColor="@color/blue"
+                app:strokeColor="@color/blue"
                 app:strokeWidth="1dp" />
         </LinearLayout>
     </LinearLayout>

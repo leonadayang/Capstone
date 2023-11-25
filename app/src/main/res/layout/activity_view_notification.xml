@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNotification">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notificationGreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom_right">
+
+        <ImageButton
+            android:id="@+id/buttonBackNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/backButton"
+            android:padding="15dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/labelNotifications"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:padding="10dp"
+            android:text="@string/labelNotifications"
+            android:textAlignment="textStart"
+            android:textColor="@color/light"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/buttonBackNotification"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/notificationGreenBackground">
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingTop="15dp"
+            android:text="@string/notificationTitle"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/notificationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingBottom="15dp"
+            android:text="@string/date"
+            android:textColor="@color/darkGray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/notificationDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="20dp"
+            android:text="@string/review1"
+            android:textColor="@color/lighterBlack"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -12,4 +12,6 @@
     <color name="hintColor">#141414</color>
     <color name="vectorColor">#1A9AB7</color>
     <color name="infoText">#141313</color>
+    <color name="stayButton">#40C0D8</color>
+    <color name="stayButtonText">#FBFEFF</color>
 </resources>

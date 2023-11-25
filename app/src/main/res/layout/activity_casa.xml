@@ -592,8 +592,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-                <!--icon star-->
                 <ImageView
                     android:id="@+id/icStar2"
                     android:layout_width="16sp"
@@ -603,7 +601,7 @@
                     android:src="@drawable/ic_star"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-                <!--rating-->
+
                 <TextView
                     android:id="@+id/txtRate2"
                     android:layout_width="wrap_content"
@@ -615,7 +613,7 @@
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/icStar2"
                     app:layout_constraintTop_toTopOf="parent" />
-                <!--like icon-->
+
                 <ImageView
                     android:id="@+id/icLike2"
                     android:layout_width="16sp"
@@ -625,7 +623,7 @@
                     app:layout_constraintStart_toEndOf="@+id/txtRate2"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_like" />
-                <!--number of reviews-->
+
                 <TextView
                     android:id="@+id/txtReview2"
                     android:layout_width="wrap_content"
@@ -636,9 +634,7 @@
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/icLike2"
                     app:layout_constraintTop_toTopOf="parent" />
-                <!--reviews-->
-                <!--horizontal scroll-->
-                <!--spacer-->
+
                 <HorizontalScrollView
                     android:id="@+id/horizontalReviews"
                     android:layout_width="match_parent"
@@ -913,20 +909,47 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/staySafety" />
 
-                <View
-                    android:id="@+id/line10"
-                    android:layout_width="380dp"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@android:color/darker_gray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/casaSafety" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
         </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstLayout">
+
+            <TextView
+                android:id="@+id/stayPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="₱ 3,900 / night"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/reserveNowBtn1"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/reserveNowBtn1"
+                android:layout_width="177dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="24sp"
+                android:background="@drawable/btn_hotel_bg"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/booknow"
+                app:backgroundTint="@color/stayButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

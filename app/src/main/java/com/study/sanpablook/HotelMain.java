@@ -5,8 +5,11 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
+import android.widget.TextView;
 
 public class HotelMain extends AppCompatActivity {
 

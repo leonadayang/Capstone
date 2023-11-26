@@ -21,7 +21,7 @@
             android:layout_width="48sp"
             android:layout_height="0dp"
             android:layout_marginStart="16sp"
-            android:layout_marginTop="16sp"
+            android:layout_marginTop="8dp"
             android:background="@color/white"
             android:padding="0dp"
             android:src="@drawable/ic_btn_arrow_back"
@@ -52,7 +52,8 @@
             android:background="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtReviewReserve" />
+            app:layout_constraintTop_toBottomOf="@+id/txtReviewReserve"
+            app:layout_constraintBottom_toTopOf="@+id/imgPalmerasReservation" />
 
         <!--imgPalmeras-->
         <com.google.android.material.imageview.ShapeableImageView
@@ -60,7 +61,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_marginStart="20sp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/spacer2"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,12 +74,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppins_light"
             android:text="Dine-in Reservation"
-            android:textSize="14sp"
             android:textColor="@color/lighterBlack"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgPalmerasReservation"
             app:layout_constraintTop_toBottomOf="@+id/spacer1" />
@@ -155,7 +156,7 @@
             android:background="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_accredited" />
+            app:layout_constraintTop_toBottomOf="@+id/imgPalmerasReservation" />
         <!--yourReservation-->
         <TextView
             android:id="@+id/txtYourReservation"
@@ -183,27 +184,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtYourReservation" />
         <!--date calendar-->
-        <EditText
+        <Button
             android:id="@+id/editTxtDate"
+            style="?android:spinnerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:fontFamily="@font/poppins_regular"
-            android:hint="@string/dates"
-            android:inputType="date"
-            android:textColor="@color/black"
-            android:textColorHint="@color/blueGreen"
+            android:onClick="openDatePicker"
+            android:text="@string/dates"
+            android:textColor="@color/blueGreen"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+            app:layout_constraintTop_toBottomOf="@+id/txtYourReservation" />
         <!--time-->
         <TextView
             android:id="@+id/txtTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/time"
             android:textColor="@color/black"
@@ -211,27 +212,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTxtDate" />
         <!--timeDetails-->
-        <EditText
+        <Button
             android:id="@+id/editTxtTime"
+            style="?android:spinnerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:fontFamily="@font/poppins_regular"
-            android:hint="@string/time"
-            android:inputType="time"
-            android:textColor="@color/black"
-            android:textColorHint="@color/blueGreen"
+            android:onClick="popTimePicker"
+            android:text="@string/time"
+            android:textColor="@color/blueGreen"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxtDate" />
         <!--guest-->
         <TextView
             android:id="@+id/txtGuest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/guests"
             android:textColor="@color/black"
@@ -239,28 +241,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTxtTime" />
 
-        <EditText
+        <Spinner
             android:id="@+id/editTxtGuest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            style="?android:spinnerStyle"
+            android:layout_width="200sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/guests"
-            android:inputType="numberDecimal"
-            android:textColor="@color/black"
-            android:textColorHint="@color/blueGreen"
+            android:textColor="@color/blueGreen"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtGuest" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxtTime" />
         <!--spacer-->
         <TextView
             android:id="@+id/spacer3"
             android:layout_width="match_parent"
             android:layout_height="0.8dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:background="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -286,7 +287,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_light"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/messagePlace"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -310,12 +311,13 @@
 
         <Button
             android:id="@+id/btnMessagePlace"
+            android:onClick="btnMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:backgroundTint="@color/white"
-            android:text="@string/add"
+            android:text="@string/go"
             android:textColor="@color/darkBlue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -330,7 +332,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="@string/reservePhoneNumber"
-            android:fontFamily="@font/poppins_light"
+            android:fontFamily="@font/poppins_regular"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -373,12 +375,12 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rounded_corners_50"
             android:backgroundTint="@color/blueGreenLighter"
             android:fontFamily="@font/poppins_extra_bold"
             android:padding="16sp"
             android:text="@string/confirm"
-            android:background="@drawable/rounded_corners_50"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

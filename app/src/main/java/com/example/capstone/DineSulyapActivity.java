@@ -3,6 +3,7 @@ package com.example.capstone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,5 +54,10 @@ public class DineSulyapActivity extends AppCompatActivity {
 //
 //            }
 //        });
+    }
+    //message button
+    public void btnMessageSulyap(View v) {
+        String number = "09171821483";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
     }
 }

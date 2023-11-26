@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Products</string>
+    <string name="search_title">Search</string>
+    <string name="coconut">COCONUT</string>
+    <string name="pinayte">PINAYTE</string>
+    <string name="ube">UBE</string>
+    <string name="cacao">CACAO</string>
+    <string name="kape">KAPE</string>
+    <string name="lettuce">LETTUCE</string>
+    <string name="handicrafts">HANDICRAFTS</string>
+    <string name="contact">Contact Details</string>
+    <string name="name">Name</string>
+    <string name="fb">Facebook</string>
+    <string name="address">Address</string>
+    <string name="cpno">Contact Number</string>
+</resources>

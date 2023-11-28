@@ -3,6 +3,7 @@ package com.study.sanpablook;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ public class HotelMain extends AppCompatActivity {
     private CardView casaCard;
     private CardView medingCard;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

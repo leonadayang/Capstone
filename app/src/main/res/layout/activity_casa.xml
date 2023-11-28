@@ -194,7 +194,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/line" />
 
                 <TextView
-                    android:id="@+id/aboutCasa"
+                    android:id="@+id/aboutCasaHotel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
@@ -673,7 +673,7 @@
                                 android:fontFamily="@font/poppins_regular"
                                 android:justificationMode="inter_word"
                                 android:padding="10sp"
-                                android:text="@string/casaReview1"
+                                android:text="@string/casastayReview1"
                                 android:textColor="#141414"
                                 android:textSize="12sp" />
 
@@ -710,7 +710,7 @@
                                 android:fontFamily="@font/poppins_regular"
                                 android:justificationMode="inter_word"
                                 android:padding="10sp"
-                                android:text="@string/casaReview2"
+                                android:text="@string/casastayReview2"
                                 android:textColor="#141414"
                                 android:textSize="12sp" />
 

@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">SanPabLOOK</string>
     <string name="userLocation">18D Werner Schetelig Ave</string>
-    <string name="location">Location</string>
     <string name="hotel">Hotel</string>
     <string name="resort">Resort</string>
     <string name="bnb">BnB</string>
@@ -10,9 +9,7 @@
     <string name="deals">HOT DEALS</string>
     <string name="meding">Tahanan ni Aling Meding</string>
     <string name="medingPrice">₱1,099</string>
-    <string name="casa">Casa San Pablo</string>
     <string name="casaPrice">₱3,900</string>
-    <string name="popular">MOST POPULAR</string>
     <string name="preferred">MOST PREFERRED</string>
     <string name="searchHint">Tara na! Saan tayo?</string>
     <string name="palmera">Casa Palmera</string>
@@ -20,28 +17,22 @@
     <string name="diamond">Blue Diamond Court</string>
     <string name="mockRating">4.69</string>
     <string name="mockReview">420 Reviews</string>
-    <string name="accredited">Accredited</string>
-    <string name="casaLocation">Colage Avenue, San Pablo City, Laguna</string>
-    <string name="about">About</string>
-    <string name="aboutCasa">Casa San Pablo is within a sprawling family estate where you can reconnect with your loved ones — and yourself — through our unique, creative and cultural experiences. We offer family getaways, relaxing escapes, wedding party venues, team building spaces, celebrations, and creative wellness activities.</string>
+    <string name="aboutCasaHotel">Casa San Pablo is within a sprawling family estate where you can reconnect with your loved ones — and yourself — through our unique, creative and cultural experiences. We offer family getaways, relaxing escapes, wedding party venues, team building spaces, celebrations, and creative wellness activities.</string>
     <string name="yourHost">Meet your host</string>
     <string name="line">____________________________________</string>
     <string name="casaProfileRating">4.54 ★ rating</string>
     <string name="casaProfileReviews">420 reviews</string>
     <string name="casaProfileHosting">6 months hosting</string>
     <string name="casaProfileInfo">We love to travel and share our experiences to others. We aim to assist and attract more tourists to visit the same place we’ve been.</string>
-    <string name="message">Message</string>
-    <string name="offers">What this place offers</string>
     <string name="casaLock">Lock on bedroom door</string>
     <string name="wifi">Wifi</string>
     <string name="bednbfast">Bed and Breakfast</string>
     <string name="park">Free parking on premise</string>
     <string name="cctv">Security cameras on property</string>
     <string name="pin">Events Place</string>
-    <string name="cafe">Cafe</string>
     <string name="stayRest">Where you\'ll be resting</string>
-    <string name="casaReview1">Had a great stay at Mr. Jak’s place. It is quiet and peaceful. Me and my part...</string>
-    <string name="casaReview2">So amazing! I love this place! I am alert, awake, thrilled, alive, enthusiastic. The food...</string>
+    <string name="casastayReview1">Had a great stay at Mr. Jak’s place. It is quiet and peaceful. Me and my part...</string>
+    <string name="casastayReview2">So amazing! I love this place! I am alert, awake, thrilled, alive, enthusiastic. The food...</string>
     <string name="showmore">Show more >></string>
     <string name="availability">Availability</string>
     <string name="casaAvailable">September 9-24</string>
@@ -64,4 +55,209 @@
         \nCheck-out: 12:00 NN
         \n2 guests maximum</string>
     <string name="medingAvailable">Always open</string>
+=======
+    <string name="appName">San PabLOOK</string>
+
+    <!--NAVIGATION-->
+    <string name="home">Home</string>
+    <string name="dine">Dine</string>
+    <string name="book">Book</string>
+    <string name="products">Products</string>
+    <string name="profile">Profile</string>
+
+    <!--DASHBOARD TOURIST-->
+    <string name="username">Phil Nguyen</string>
+    <string name="bio">Hi I’m Phil, I’m an aspiring professional photographer!</string>
+    <string name="viewAll">View all >>></string>
+
+    <!--SETTINGS / TOURIST INFO-->
+    <string name="labelSettings">Settings</string>
+    <string name="labelLogout">Logout</string>
+    <string name="deleteAccount">Delete account</string>
+    <string name="labelEdit">Edit</string>
+    <string name="labelUsername">Username</string>
+    <string name="labelPassword">Password</string>
+    <string name="labelBio">Bio</string>
+    <string name="labelPhoneNumber">Phone number</string>
+    <string name="labelEmail">Email Address</string>
+    <string name="password">passwordpassword</string>
+    <string name="phoneNumber">09876543210</string>
+    <string name="email">philnguyen@gmail.com</string>
+    <string name="labelSave">Save</string>
+    <string name="labelCancel">Cancel</string>
+    <string name="labelCurrentPassword">Current Password</string>
+    <string name="labelNewPassword">New Password</string>
+    <string name="labelTypeNewPassword">Type your New Password</string>
+    <string name="labelRetypePassword">Re-type New Password</string>
+    <string name="labelRetypeYourPassword">Re-type your New Password</string>
+    <!--SETTINGS / TOURIST INFO-->
+    <string name="typeDeleteAccount">Re-type \"Delete account\" to confirm.</string>
+    <string name="hintDeleteAccount">Type here</string>
+    <string name="labelConfirm">Confirm</string>
+
+    <!--NOTIFICATIONS-->
+    <string name="labelNotifications">Notifications</string>
+    <string name="today">Today</string>
+    <string name="date">Aug 27 at 8:00 PM</string>
+    <string name="notificationTitle">Trisha upvoted your review.</string>
+
+    <!--EDIT PROFILE PIC DIALOG BOX-->
+    <string name="labelEditProfilePic">Edit profile picture</string>
+    <string name="labelTakePhoto">Take a photo</string>
+    <string name="labelChoosePhoto">Choose from gallery</string>
+
+    <!--CONTENT DESCRIPTIONS-->
+    <string name="profilePicture">Profile picture</string>
+    <string name="editProfilePic">Edit Profile Picture</string>
+    <string name="backButton">Back</string>
+    <string name="labelMenu">Menu</string>
+
+    <!--ACTIVITY HISTORY-->
+    <string name="activityHistory">Activity History</string>
+    <string name="destinationName1">Sampaloc Lake</string>
+    <string name="destinationName2">St. Ambrose Chapel</string>
+    <string name="destinationName3">Paraiso de Avedad</string>
+    <string name="review1">\t\tVisited Sampaloc Lake in San Pablo City, Laguna, and it was an absolute gem! The serene beauty of this natural wonder left me spellbound. The picturesque surroundings and the tranquil waters make it a perfect escape from the hustle and bustle of city life. I had the chance to take a relaxing boat ride, which allowed me to fully immerse myself in the breathtaking scenery. The local culture and hospitality were heartwarming, and I enjoyed sampling some delicious local cuisine nearby.</string>
+    <string name="review2">\t\tFirst time in Casa de San Pablo and YOU have to go! It’s the cutest little spot with amazing food. This place is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again. They made us feel welcomed and gave us an amazing experience.</string>
+    <string name="review3">\t\tThis place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty good, some classics and some twists, and for their prices it’s 100% worth it.</string>
+
+    <!--ADMIN-->
+    <string name="adminName">San Pablo Tourism Office</string>
+    <string name="labelAdmin">Admin</string>
+    <string name="labelDashboard">Dashboard</string>
+    <string name="labelReports">Reports</string>
+    <string name="labelMessage">Message</string>
+    <string name="labelPayment">Payment</string>
+    <string name="labelSignOut">Sign out</string>
+    <string name="labelTourStatus">Tour Status</string>
+    <string name="labelMostSearched">Most Searched</string>
+    <string name="labelAvailableNow">Available Now</string>
+    <string name="labelRatingsAndFeedbacks">Rating and Feedbacks</string>
+    <string name="labelCancellations">Cancellations</string>
+    <string name="labelBookingDetails">Booking Details</string>
+    <string name="labelRecentInquiries">Recent Inquiries</string>
+    <string name="mostSearched">20</string>
+    <string name="availableNow">46</string>
+    <string name="ratingsAndFeedbacks">5/5</string>
+    <string name="cancellations">47</string>
+    <!--ADMIN BOOKING DETAILS-->
+    <string name="bookingDate">12-25-2023</string>
+    <string name="labelName">Name</string>
+    <string name="labelDate">Date</string>
+    <string name="labelPending">Pending</string>
+    <string name="labelReceived">Received</string>
+    <string name="labelCancelled">Cancelled</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--DINE SEARCH BAR-->
+    <string name="location">Location</string>
+    <string name="reviewReserve">Review Reservation</string>
+    <string name="pinLocation">18D Werner Schetelig Ave</string>
+    <string name="hint">Tara na! Saan tayo?</string>
+
+    <!--LOCATIONS OF PLACES-->
+    <string name="palmerasLocation">173 Pan-Philippine Hwy, San Pablo City, Laguna</string>
+    <string name="sulyapLocation">Cocoland Compound, Barangay, San Pablo City, 4000 Laguna</string>
+    <string name="casaLocation">38C7+QWH, Colago Ave, San Pablo City, Laguna</string>
+
+    <!--DINE BUTTONS-->
+    <string name="all">All</string>
+    <string name="cafe">Cafe</string>
+    <string name="alFresco">Al Fresco</string>
+    <string name="message">MESSAGE</string>
+    <string name="btnReserve">RESERVE NOW</string>
+    <string name="add">Add</string>
+    <string name="confirm">CONFIRM RESERVATION</string>
+
+    <!--CATEGORIES-->
+    <string name="deal">HOT DEALS</string>
+    <string name="popular">MOST POPULAR</string>
+    <string name="prefer">MOST PREFERRED</string>
+
+    <!--LOCATIONS NAMES-->
+    <string name="palmeras">Palmeras Garden Restaurant</string>
+    <string name="sulyap">Sulyap Gallery Café</string>
+    <string name="casa">Casa San Pablo</string>
+
+    <!--REVIEWS AND RATINGS-->
+    <!--NUMBER OF REVIEWS-->
+    <string name="noOfReviewsPalmeras">68 reviews</string>
+    <string name="noOfReviewsSulyap">78 reviews</string>
+    <string name="noOfReviewsCasa">128 reviews</string>
+    <!--NUMBER OF RATINGS-->
+    <string name="noOfRatingsPalmeras">4.52</string>
+    <string name="noOfRatingsSulyap">4.55</string>
+    <string name="noOfRatingsCasa">4.42</string>
+
+
+    <!--PALMERAS REVIEWS-->
+    <string name="palmerasReview1">Love the place. Ample Space in parking been here 3 times already but they always serve their food. I really love the overall service thus far. Will come again.</string>
+    <string name="palmerasReview2">The place is quite spacious. It has staircases going down to the pond with dining area and an entertainment. Will come again sooner or later.</string>
+    <string name="palmerasReview3">The customer service is so amazing that I am able to relax and have fun in hosting my party and being able to enjoy everything.</string>
+    <!--SULYAP REVIEWS-->
+    <string name="sulyapReview1">The customer service is so amazing that I am able to relax and have fun in hosting my party and being able to enjoy everything.</string>
+    <string name="sulyapReview2">Love the place. Ample Space in parking been here 3 times already but they always serve their food. I really love the overall service thus far.</string>
+    <string name="sulyapReview3">The place is quite spacious. It has staircases going down to the pond with dining area and an entertainment.</string>
+    <!--CASA REVIEWS-->
+    <string name="casaReview1">The place is quite spacious. It has staircases going down to the pond with dining area and an entertainment. Will come again very soon!</string>
+    <string name="casaReview2">The customer service is so amazing that I am able to relax and have fun in hosting my party and being able to enjoy everything.</string>
+    <string name="casaReview3">Love the place. Ample Space in parking been here 3 times already but they always serve their food. I really love the overall service.</string>
+
+    <!--DESCRIPTIONS-->
+    <!--PALMERAS DESCRIPTIONS-->
+    <string name="aboutPalmeras">Palmeras Garden Restaurant is a Filipino establishment that offers authentic local cuisine at reasonable prices. The restaurant boasts a relaxing ambiance and a garden theme that transports diners to a different time and place. Its interior design features classic Filipino architecture and decor, with a giant koi pond as its centerpiece.</string>
+    <string name="aboutMorePalmeras">Palmeras Garden Restaurant is a fine dining spot that offers great food, a relaxing ambiance, and excellent service. It is definitely worth a visit when in San Pablo City.</string>
+    <!--SULYAP DESCRIPTIONS-->
+    <string name="aboutSulyap">Sulyap Gallery Café is a Filipino establishment that offers authentic local cuisine at reasonable prices. The restaurant boasts a relaxing ambiance and a garden theme that transports diners to a different time and place. Its interior design features classic Filipino architecture and decor, with a giant fountain as its centerpiece.</string>
+    <string name="aboutMoreSulyap">Sulyap Gallery Café is a fine dining spot that offers great food, a relaxing ambiance, and excellent service. It is definitely worth a visit when in San Pablo City.</string>
+    <!--Casa DESCRIPTIONS-->
+    <string name="aboutCasa">Casa San Pablo is a Filipino establishment that offers authentic local cuisine at reasonable prices. The restaurant boasts a relaxing ambiance and a garden theme that transports diners to a different time and place. Its interior design features classic Filipino architecture and decor, with a giant kabana as its centerpiece.</string>
+    <string name="aboutMoreCasa">Casa San Pablo is a fine dining spot that offers great food, a relaxing ambiance, and excellent service. It is definitely worth a visit when in San Pablo City.</string>
+
+
+    <!--SUBTITLES-->
+    <string name="accredited">Accredited</string>
+    <string name="about">About this place</string>
+    <string name="where">Where you will be dining</string>
+    <string name="opening">Opening hours</string>
+    <string name="yourReservation">Your Reservation</string>
+    <string name="dates">Dates</string>
+    <string name="time">Time</string>
+    <string name="guests">Guests</string>
+    <string name="requirements">Requirements</string>
+
+    <!--RESERVATION REQUIREMENTS-->
+    <string name="messagePlace">Message the place</string>
+    <string name="messagePlaceDetails">Message for inquiries, who is coming with you, and what you need for the dine-in.</string>
+    <string name="reservePhoneNumber">Phone Number</string>
+    <string name="phoneNumberDetails">Add and confirm your phone number to get updates.</string>
+
+    <!--OFFERS-->
+    <string name="offers">What this place offers</string>
+    <string name="offerOutdoor">Outdoor seating</string>
+    <string name="offerWifi">Wifi</string>
+    <string name="offerReservation">Reservation</string>
+    <string name="offerParking">Free parking on premises</string>
+    <string name="offerCCTV">Security cameras on property</string>
+    <string name="offerCard">Credit cards accepted</string>
+    <string name="offerPWD">Wheelchair accessible</string>
+
+    <!--DAYS-->
+    <string name="sunday">SUNDAY</string>
+    <string name="monday">MONDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="wednesday">WEDNESDAY</string>
+    <string name="thursday">THURSDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="saturday">SATURDAY</string>
+
+    <!--HOURS-->
+    <string name="nine_elevenpm">9:00AM to 11:00PM </string>
+    <string name="nineam_ninepm">9:00AM to 9:00PM </string>
+    <string name="eleven_ninepm">11:00AM to 9:00PM </string>
+    <string name="close">CLOSED</string>
+
 </resources>

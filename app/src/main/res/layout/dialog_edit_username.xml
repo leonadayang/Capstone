@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_box"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/labelUsername"
+        android:textAlignment="center"
+        android:textColor="@color/darkBlue"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ems="15"
+            android:maxLines="2"
+            android:maxLength="30"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            android:text="@string/username"
+            android:textColor="@color/lighterBlack"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:letterSpacing="0"
+                android:padding="10dp"
+                android:text="@string/labelSave"
+                android:textAllCaps="false"
+                android:textColor="@color/light"
+                android:textSize="15sp"
+                app:cornerRadius="50dp"
+                app:rippleColor="@color/light" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/light"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:letterSpacing="0"
+                android:padding="10dp"
+                android:text="@string/labelCancel"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                app:cornerRadius="50dp"
+                app:rippleColor="@color/blue"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

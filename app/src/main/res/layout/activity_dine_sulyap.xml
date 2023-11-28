@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DineSulyapActivity"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--Vertical scroll-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Location Img-->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgSulyap"
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/txtSulyap"
+                    app:layout_constraintEnd_toEndOf="@+id/txtSulyap"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/round_corner"
+                    app:srcCompat="@drawable/imgsulyap" />
+                <!--Location Name-->
+                <TextView
+                    android:id="@+id/txtSulyap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/sulyap"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgSulyap" />
+                <!--back button-->
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/round_btn"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_back" />
+                <!--share button-->
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="10sp"
+                    android:background="@drawable/round_btn"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_share" />
+                <!--icon star-->
+                <ImageView
+                    android:id="@+id/icStar"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap" />
+                <!--rating-->
+                <TextView
+                    android:id="@+id/txtRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/noOfRatingsSulyap"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/icStar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap" />
+                <!--like icon-->
+                <ImageView
+                    android:id="@+id/icLike"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtRate"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap"
+                    app:srcCompat="@drawable/ic_like" />
+                <!--number of reviews-->
+                <TextView
+                    android:id="@+id/txtReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/noOfReviewsSulyap"
+                    android:textSize="14sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toEndOf="@+id/icLike"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap" />
+                <!--accredited icon-->
+                <ImageView
+                    android:id="@+id/icAccredited"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtReview"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap"
+                    app:srcCompat="@drawable/ic_medal" />
+                <!--accredited-->
+                <TextView
+                    android:id="@+id/txtAccredited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/accredited"
+                    android:textSize="14sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toEndOf="@+id/icAccredited"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyap" />
+                <!--dine location-->
+                <TextView
+                    android:id="@+id/txtDineLocation"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/sulyapLocation"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icStar" />
+                <!--spacer-->
+                <View
+                    android:id="@+id/spacer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDineLocation" />
+                <!--About-->
+                <TextView
+                    android:id="@+id/About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/about"
+                    android:textSize="20sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spacer" />
+                <!--about details -->
+                <TextView
+                    android:id="@+id/txtAboutDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/aboutSulyap"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/About" />
+                <!--spacer-->
+                <View
+                    android:id="@+id/spacer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAboutDetails" />
+                <!--Sulyap profile pic-->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgRestoProfile"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spacer2"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/img_sulyap"
+                    app:strokeColor="#99DDE7"
+                    app:strokeWidth="10sp" />
+                <!--Sulyap Name-->
+                <TextView
+                    android:id="@+id/txtSulyapName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:text="@string/sulyap"
+                    android:textAlignment="center"
+                    android:textColor="@color/blueText"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgRestoProfile" />
+                <!--more details-->
+                <TextView
+                    android:id="@+id/txtSulyapdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/aboutMoreSulyap"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyapName" />
+                <!--message button-->
+                <Button
+                    android:id="@+id/btnMessage"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:padding="16sp"
+                    android:text="@string/message"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_dine_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSulyapdetails" />
+                <!--spacer-->
+                <View
+                    android:id="@+id/spacer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMessage" />
+                <!--Offers-->
+                <TextView
+                    android:id="@+id/txtOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/offers"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spacer3" />
+
+                <!--Offers details-->
+                <TextView
+                    android:id="@+id/txtOffersDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerOutdoor"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icTable"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffers" />
+
+                <ImageView
+                    android:id="@+id/icTable"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffers"
+                    app:srcCompat="@drawable/ic_table" />
+
+                <TextView
+                    android:id="@+id/txtOffersDetails1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerWifi"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icWifi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails" />
+
+                <ImageView
+                    android:id="@+id/icWifi"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtOffersDetails1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icTable"
+                    app:srcCompat="@drawable/ic_wifi" />
+
+                <TextView
+                    android:id="@+id/txtOffersDetails2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerReservation"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icReserve"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails1" />
+
+                <ImageView
+                    android:id="@+id/icReserve"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icWifi"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/txtOffersDetails3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerParking"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icParking"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails2" />
+
+                <ImageView
+                    android:id="@+id/icParking"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icReserve"
+                    app:srcCompat="@drawable/ic_car" />
+
+                <TextView
+                    android:id="@+id/txtOffersDetails4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerCCTV"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icCCTV"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails3" />
+
+                <ImageView
+                    android:id="@+id/icCCTV"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icParking"
+                    app:srcCompat="@drawable/ic_cctv" />
+
+                <TextView
+                    android:id="@+id/txtOffersDetails5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/offerCard"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icCard"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails4" />
+
+                <ImageView
+                    android:id="@+id/icCard"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/icCCTV"
+                    app:srcCompat="@drawable/ic_card" />
+
+
+                <!--spacer-->
+                <View
+                    android:id="@+id/spacer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOffersDetails5" />
+                <!--Where-->
+                <TextView
+                    android:id="@+id/txtWhere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/where"
+                    android:textSize="20sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spacer4" />
+                <!--Where image-->
+                <ImageView
+                    android:id="@+id/imgPalmerasGoogleMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtWhere"
+                    app:srcCompat="@drawable/imgpalmeraslocation" />
+                <!--spacer-->
+                <TextView
+                    android:id="@+id/spacer5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgPalmerasGoogleMap" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Horizontal scroll-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--icon star-->
+                <ImageView
+                    android:id="@+id/icStar2"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--rating-->
+                <TextView
+                    android:id="@+id/txtRate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/noOfRatingsSulyap"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/icStar2"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--like icon-->
+                <ImageView
+                    android:id="@+id/icLike2"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtRate2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_like" />
+                <!--number of reviews-->
+                <TextView
+                    android:id="@+id/txtReview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/noOfReviewsSulyap"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/icLike2"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--reviews-->
+                <!--horizontal scroll-->
+                <HorizontalScrollView
+                    android:id="@+id/horizontalReviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:layout_marginBottom="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="235sp"
+                            android:layout_height="155sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="18sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            app:cardCornerRadius="15sp"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/review1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:padding="10sp"
+                                android:text="@string/sulyapReview1"
+                                android:justificationMode="inter_word"
+                                android:textColor="@color/lighterBlack"
+                                android:textSize="12sp" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="235sp"
+                            android:layout_height="155sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="18sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            app:cardCornerRadius="15sp"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/review2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:padding="10sp"
+                                android:text="@string/sulyapReview2"
+                                android:justificationMode="inter_word"
+                                android:textColor="@color/lighterBlack"
+                                android:textSize="12sp" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="235sp"
+                            android:layout_height="155sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="18sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="10sp"
+                            app:cardCornerRadius="15sp"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/review3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:padding="10sp"
+                                android:text="@string/sulyapReview3"
+                                android:justificationMode="inter_word"
+                                android:textColor="@color/lighterBlack"
+                                android:textSize="12sp" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+                <!--spacer-->
+                <TextView
+                    android:id="@+id/spacer6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalReviews" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtOpening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/opening"
+                    android:textSize="20sp"
+                    android:textColor="@color/lighterBlack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--sunday-->
+                <TextView
+                    android:id="@+id/txtDay1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/sunday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOpening" />
+                <TextView
+                    android:id="@+id/txtHour1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nine_elevenpm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOpening" />
+                <!--monday-->
+                <TextView
+                    android:id="@+id/txtDay2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/monday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay1" />
+                <TextView
+                    android:id="@+id/txtHour2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nineam_ninepm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour1" />
+                <!--tuesday-->
+                <TextView
+                    android:id="@+id/txtDay3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/tuesday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay2" />
+                <TextView
+                    android:id="@+id/txtHour3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nineam_ninepm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour2" />
+                <!--wednesday-->
+                <TextView
+                    android:id="@+id/txtDay4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay3" />
+                <TextView
+                    android:id="@+id/txtHour4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nineam_ninepm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour3" />
+                <!--thursday-->
+                <TextView
+                    android:id="@+id/txtDay5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/thursday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay4" />
+                <TextView
+                    android:id="@+id/txtHour5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/close"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay5"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour4" />
+                <!--friday-->
+                <TextView
+                    android:id="@+id/txtDay6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/friday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay5" />
+                <TextView
+                    android:id="@+id/txtHour6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nineam_ninepm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay6"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour5" />
+                <!--saturday-->
+                <TextView
+                    android:id="@+id/txtDay7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="fill"
+                    android:text="@string/saturday"
+                    android:textColor="@color/lighterBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHour7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay6" />
+                <TextView
+                    android:id="@+id/txtHour7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/nine_elevenpm"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtDay7"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHour6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reserveNowBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24sp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_dine_bg"
+            android:fontFamily="@font/poppins_extra_bold"
+            android:padding="16sp"
+            android:text="@string/btnReserve"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

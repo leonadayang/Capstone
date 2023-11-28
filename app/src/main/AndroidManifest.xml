@@ -2,11 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
+=======
+    <!--Camera-->
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+>>>>>>> 6ff899f82ad1ab020d692059b1ca4de7d4a83d0b
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -20,6 +30,48 @@
             android:exported="false" />
         <activity
             android:name=".HotelMain"
+=======
+        android:label="@string/appName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewNotification"
+            android:exported="false" />
+        <activity
+            android:name=".AdminBookingDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenu"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".DineCasaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DineSulyapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinePalmerasReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinePalmerasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHistory"
+            android:exported="false" />
+        <activity
+            android:name=".UserSettings"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+>>>>>>> 6ff899f82ad1ab020d692059b1ca4de7d4a83d0b
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1sp"
+    tools:layout_editor_absoluteY="1sp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        tools:context=".DineFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--//Search Section-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/searchConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue">
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="285dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/location"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPinLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/pinLocation"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtLocation"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtLocation"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/search_bar_bg"
+                    android:drawableStart="@drawable/ic_search"
+                    android:ems="10"
+                    android:hint="@string/hint"
+                    android:inputType="text"
+                    android:padding="14sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#BDBDBD"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPinLocation"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="@+id/txtPinLocation"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPinLocation" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/horizontalContraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/searchBar">
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/dineNavigationBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/dine_nav_background"
+                    app:itemActiveIndicatorStyle="@style/Base.Theme.Capstone"
+                    app:itemPaddingTop="0dp"
+                    app:itemRippleColor="@color/blue"
+                    app:itemTextAppearanceActive="@dimen/design_bottom_navigation_active_text_size"
+                    app:itemTextAppearanceInactive="@dimen/design_bottom_navigation_text_size"
+                    app:layout_constraintBottom_toTopOf="@+id/linearChoices"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/top_left_radius"
+                    app:menu="@menu/dine_nav_menu">
+
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+                <ImageView
+                    android:id="@+id/top_left_radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/rounded_corner_top_left" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearChoices"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dineNavigationBar">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragmentContainerView"
+                        android:name="com.example.capstone.DineAllFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

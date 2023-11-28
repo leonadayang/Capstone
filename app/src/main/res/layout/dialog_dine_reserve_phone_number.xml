@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_box">
+
+    <TextView
+        android:id="@+id/editPhoneNumberReservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/labelAddPhoneNumberReservation"
+        android:textAlignment="center"
+        android:textColor="@color/darkBlue"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/setPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="Enter phone number"
+            android:fontFamily="@font/poppins_light"
+            android:textColorHint="@color/blueGreenLighter"
+            android:layout_margin="24sp"/>
+
+        <LinearLayout
+            android:id="@+id/buttonsSetPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/blueGreenLighter"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_weight="1"
+                android:layout_margin="20sp"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dine_bg"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_weight="1"
+                android:layout_margin="20sp"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

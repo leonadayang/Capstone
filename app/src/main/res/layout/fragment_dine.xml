@@ -65,22 +65,22 @@
                     app:layout_constraintStart_toStartOf="@+id/txtLocation"
                     app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
 
-                <EditText
+                <!--search bar-->
+                <androidx.appcompat.widget.SearchView
                     android:id="@+id/searchBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24sp"
                     android:layout_marginTop="16sp"
                     android:layout_marginEnd="24sp"
+                    app:iconifiedByDefault="false"
                     android:background="@drawable/search_bar_bg"
                     android:drawableStart="@drawable/ic_search"
                     android:ems="10"
-                    android:hint="@string/hint"
                     android:inputType="text"
-                    android:padding="14sp"
                     android:textColor="@color/black"
                     android:textColorHint="#BDBDBD"
-                    android:textSize="16sp"
+                    app:defaultQueryHint="@string/hint"
                     app:layout_constraintEnd_toEndOf="@+id/txtPinLocation"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="@+id/txtPinLocation"
@@ -88,67 +88,35 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <!--Nested Fragments-->
+            <LinearLayout
                 android:id="@+id/horizontalContraint"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16sp"
-                app:layout_constraintTop_toBottomOf="@+id/searchBar">
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_top_left">
 
-
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/dineNavigationBar"
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:background="@drawable/dine_nav_background"
-                    app:itemActiveIndicatorStyle="@style/Base.Theme.Capstone"
-                    app:itemPaddingTop="0dp"
-                    app:itemRippleColor="@color/blue"
-                    app:itemTextAppearanceActive="@dimen/design_bottom_navigation_active_text_size"
-                    app:itemTextAppearanceInactive="@dimen/design_bottom_navigation_text_size"
-                    app:layout_constraintBottom_toTopOf="@+id/linearChoices"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/top_left_radius"
-                    app:menu="@menu/dine_nav_menu">
+                    android:layout_height="wrap_content">
 
-                </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
-                <ImageView
-                    android:id="@+id/top_left_radius"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:layout_constraintBottom_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/rounded_corner_top_left" />
-
-
-                <LinearLayout
-                    android:id="@+id/linearChoices"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/dineNavigationBar">
-
-                    <androidx.fragment.app.FragmentContainerView
-                        android:id="@+id/fragmentContainerView"
-                        android:name="com.example.capstone.DineAllFragment"
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/rounded_corner_top_left"/>
 
+                </com.google.android.material.appbar.AppBarLayout>
 
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

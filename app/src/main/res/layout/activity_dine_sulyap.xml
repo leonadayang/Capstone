@@ -265,6 +265,7 @@
                 <!--message button-->
                 <Button
                     android:id="@+id/btnMessage"
+                    android:onClick="btnMessageSulyap"
                     android:layout_width="150sp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -571,6 +572,7 @@
                     android:id="@+id/horizontalReviews"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scrollbarThumbHorizontal="@null"
                     android:layout_marginTop="0sp"
                     android:layout_marginBottom="25sp"
                     app:layout_constraintBottom_toBottomOf="parent"

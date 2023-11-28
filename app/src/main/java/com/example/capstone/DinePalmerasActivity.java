@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,7 +47,6 @@ public class DinePalmerasActivity extends AppCompatActivity {
             }
         });
 
-
         //reserve now button
         reserveNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,5 +56,10 @@ public class DinePalmerasActivity extends AppCompatActivity {
 
             }
         });
+    }
+    //message button
+    public void btnMessage(View v) {
+        String number = "09283395502";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
     }
 }

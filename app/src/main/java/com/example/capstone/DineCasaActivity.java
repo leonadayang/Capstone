@@ -3,6 +3,7 @@ package com.example.capstone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,5 +53,10 @@ public class DineCasaActivity extends AppCompatActivity {
 //
 //            }
 //        });
+    }
+    //message button
+    public void btnMessageCasa(View v) {
+        String number = "09178126687";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
     }
 }

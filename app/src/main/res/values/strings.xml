@@ -110,6 +110,8 @@
     <string name="labelEditProfilePic">Edit profile picture</string>
     <string name="labelTakePhoto">Take a photo</string>
     <string name="labelChoosePhoto">Choose from gallery</string>
+    <!--for dine_reserve-->
+    <string name="labelAddPhoneNumberReservation">Add phone number</string>
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="profilePicture">Profile picture</string>
@@ -170,11 +172,12 @@
 
     <!--DINE BUTTONS-->
     <string name="all">All</string>
-    <string name="cafe">Cafe</string>
+    <string name="cafe">Café</string>
     <string name="alFresco">Al Fresco</string>
     <string name="message">MESSAGE</string>
     <string name="btnReserve">RESERVE NOW</string>
     <string name="add">Add</string>
+    <string name="go">Go</string>
     <string name="confirm">CONFIRM RESERVATION</string>
 
     <!--CATEGORIES-->
@@ -226,7 +229,7 @@
     <!--SUBTITLES-->
     <string name="accredited">Accredited</string>
     <string name="about">About this place</string>
-    <string name="where">Where you will be dining</string>
+    <string name="where">Where you\'ll be dining</string><!--added apostrophe-->
     <string name="opening">Opening hours</string>
     <string name="yourReservation">Your Reservation</string>
     <string name="dates">Dates</string>
@@ -264,5 +267,19 @@
     <string name="nineam_ninepm">9:00AM to 9:00PM </string>
     <string name="eleven_ninepm">11:00AM to 9:00PM </string>
     <string name="close">CLOSED</string>
+
+    <!--NUMBER OF GUESTS-->
+    <string-array name="guests">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 
 </resources>

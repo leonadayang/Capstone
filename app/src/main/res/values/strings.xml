@@ -14,9 +14,9 @@
     <string name="viewAll">View all >>></string>
 
     <!--SETTINGS / TOURIST INFO-->
-    <string name="settings">Settings</string>
-    <string name="logout">Logout</string>
-    <string name="deleteAccount">Delete Account</string>
+    <string name="labelSettings">Settings</string>
+    <string name="labelLogout">Logout</string>
+    <string name="deleteAccount">Delete account</string>
     <string name="labelEdit">Edit</string>
     <string name="labelUsername">Username</string>
     <string name="labelPassword">Password</string>
@@ -26,6 +26,17 @@
     <string name="password">passwordpassword</string>
     <string name="phoneNumber">09876543210</string>
     <string name="email">philnguyen@gmail.com</string>
+    <string name="labelSave">Save</string>
+    <string name="labelCancel">Cancel</string>
+    <string name="labelCurrentPassword">Current Password</string>
+    <string name="labelNewPassword">New Password</string>
+    <string name="labelTypeNewPassword">Type your New Password</string>
+    <string name="labelRetypePassword">Re-type New Password</string>
+    <string name="labelRetypeYourPassword">Re-type your New Password</string>
+    <!--SETTINGS / TOURIST INFO-->
+    <string name="typeDeleteAccount">Re-type \"Delete account\" to confirm.</string>
+    <string name="hintDeleteAccount">Type here</string>
+    <string name="labelConfirm">Confirm</string>
 
     <!--NOTIFICATIONS-->
     <string name="labelNotifications">Notifications</string>
@@ -39,7 +50,6 @@
     <string name="labelChoosePhoto">Choose from gallery</string>
     <!--for dine_reserve-->
     <string name="labelAddPhoneNumberReservation">Add phone number</string>
-
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="profilePicture">Profile picture</string>
@@ -75,6 +85,13 @@
     <string name="availableNow">46</string>
     <string name="ratingsAndFeedbacks">5/5</string>
     <string name="cancellations">47</string>
+    <!--ADMIN BOOKING DETAILS-->
+    <string name="bookingDate">12-25-2023</string>
+    <string name="labelName">Name</string>
+    <string name="labelDate">Date</string>
+    <string name="labelPending">Pending</string>
+    <string name="labelReceived">Received</string>
+    <string name="labelCancelled">Cancelled</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -111,7 +128,7 @@
     <string name="sulyap">Sulyap Gallery Café</string>
     <string name="casa">Casa San Pablo</string>
 
-<!--REVIEWS AND RATINGS-->
+    <!--REVIEWS AND RATINGS-->
     <!--NUMBER OF REVIEWS-->
     <string name="noOfReviewsPalmeras">68 reviews</string>
     <string name="noOfReviewsSulyap">78 reviews</string>
@@ -135,7 +152,7 @@
     <string name="casaReview2">The customer service is so amazing that I am able to relax and have fun in hosting my party and being able to enjoy everything.</string>
     <string name="casaReview3">Love the place. Ample Space in parking been here 3 times already but they always serve their food. I really love the overall service.</string>
 
-<!--DESCRIPTIONS-->
+    <!--DESCRIPTIONS-->
     <!--PALMERAS DESCRIPTIONS-->
     <string name="aboutPalmeras">Palmeras Garden Restaurant is a Filipino establishment that offers authentic local cuisine at reasonable prices. The restaurant boasts a relaxing ambiance and a garden theme that transports diners to a different time and place. Its interior design features classic Filipino architecture and decor, with a giant koi pond as its centerpiece.</string>
     <string name="aboutMorePalmeras">Palmeras Garden Restaurant is a fine dining spot that offers great food, a relaxing ambiance, and excellent service. It is definitely worth a visit when in San Pablo City.</string>
@@ -145,7 +162,6 @@
     <!--Casa DESCRIPTIONS-->
     <string name="aboutCasa">Casa San Pablo is a Filipino establishment that offers authentic local cuisine at reasonable prices. The restaurant boasts a relaxing ambiance and a garden theme that transports diners to a different time and place. Its interior design features classic Filipino architecture and decor, with a giant kabana as its centerpiece.</string>
     <string name="aboutMoreCasa">Casa San Pablo is a fine dining spot that offers great food, a relaxing ambiance, and excellent service. It is definitely worth a visit when in San Pablo City.</string>
-
 
 
     <!--SUBTITLES-->

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarThumbVertical="@null"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- Vertical Scroll -->
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/casaWhole"
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/round_corners"
+                    app:srcCompat="@drawable/tahanannimedinghead" />
+
+                <TextView
+                    android:id="@+id/casaTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/meding"
+                    android:textColor="@color/promoText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaWhole" />
+
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/round_btn"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_back" />
+
+                <ImageButton
+                    android:id="@+id/heartBtn"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_btn"
+                    android:backgroundTint="@color/white"
+                    android:padding="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_btn_heart" />
+
+                <ImageButton
+                    android:id="@+id/shareBtn"
+                    android:layout_width="48sp"
+                    android:layout_height="48sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_btn"
+                    android:backgroundTint="@color/white"
+                    android:padding="10sp"
+                    app:layout_constraintEnd_toStartOf="@+id/heartBtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_share_btn" />
+
+                <ImageView
+                    android:id="@+id/starIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
+
+                <TextView
+                    android:id="@+id/ratings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/mockRating"
+                    android:textColor="#141414"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/starIc"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
+
+                <ImageView
+                    android:id="@+id/likeIcon"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/ratings"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt"
+                    app:srcCompat="@drawable/ic_like" />
+
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/mockReview"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/likeIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
+
+                <ImageView
+                    android:id="@+id/accreditedIcon"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/reviews"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt"
+                    app:srcCompat="@drawable/ic_medal" />
+
+                <TextView
+                    android:id="@+id/accreditedTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/accredited"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/accreditedIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
+
+                <TextView
+                    android:id="@+id/stayLocation"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/medingLocation"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/starIc" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayLocation" />
+
+                <TextView
+                    android:id="@+id/About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/about"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line" />
+
+                <TextView
+                    android:id="@+id/aboutCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:justificationMode="inter_word"
+                    android:text="@string/aboutMeding"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/About" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutCasa" />
+
+                <TextView
+                    android:id="@+id/stayHost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/yourHost"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/stayProfile"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayHost"
+                    app:shapeAppearanceOverlay="@style/round"
+                    app:srcCompat="@drawable/tahanannimedingprofile"
+                    app:strokeColor="#99DDE7"
+                    app:strokeWidth="10sp" />
+
+                <TextView
+                    android:id="@+id/stayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/meding"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/promoText"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayProfile" />
+
+                <TextView
+                    android:id="@+id/stayProfileRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/radius"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="5sp"
+                    android:text="@string/casaProfileRating"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+
+                <TextView
+                    android:id="@+id/stayReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/radius"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="5sp"
+                    android:text="@string/casaProfileReviews"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/stayProfileRate"
+                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+
+                <TextView
+                    android:id="@+id/stayHosting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/radius"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="5sp"
+                    android:text="@string/casaProfileHosting"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/stayReview"
+                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+
+                <TextView
+                    android:id="@+id/stayProfileCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:justificationMode="inter_word"
+                    android:text="@string/medingProfileInfo"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayReview" />
+
+                <Button
+                    android:id="@+id/msgBtn"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#40C0D8"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="16sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/message"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayProfileCasa" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/msgBtn" />
+
+                <TextView
+                    android:id="@+id/stayOffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/offers"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+                <ImageView
+                    android:id="@+id/lockIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_lock"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayOffers" />
+
+                <TextView
+                    android:id="@+id/offerLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/casaLock"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/lockIc"
+                    app:layout_constraintTop_toBottomOf="@+id/stayOffers" />
+
+                <!-- Wifi -->
+
+                <ImageView
+                    android:id="@+id/wifiIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_wifi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lockIc" />
+
+                <TextView
+                    android:id="@+id/offerWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/wifi"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/lockIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerLock" />
+
+                <!-- Bed and Breakfast-->
+
+                <ImageView
+                    android:id="@+id/bedbfastIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_bfood"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wifiIc" />
+
+                <TextView
+                    android:id="@+id/offerBfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/bednbfast"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/bedbfastIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerWifi" />
+
+                <!-- Parking -->
+
+                <ImageView
+                    android:id="@+id/carIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_car"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bedbfastIc" />
+
+                <TextView
+                    android:id="@+id/offerParking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/park"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/carIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerBfast" />
+
+                <!-- Security -->
+
+                <ImageView
+                    android:id="@+id/cctvIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_cctv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carIc" />
+
+                <TextView
+                    android:id="@+id/offerCCTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/cctv"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/cctvIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerParking" />
+
+                <!-- Events Place -->
+
+                <ImageView
+                    android:id="@+id/pinIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cctvIc" />
+
+                <TextView
+                    android:id="@+id/offerPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/pin"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/pinIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerCCTV" />
+
+                <!-- Cafe -->
+
+                <ImageView
+                    android:id="@+id/cafeIc"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_cafe"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pinIc" />
+
+                <TextView
+                    android:id="@+id/offerCafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/cafe"
+                    android:textColor="@color/hintColor"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/cafeIc"
+                    app:layout_constraintTop_toBottomOf="@+id/offerPin" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/offerCafe" />
+
+                <TextView
+                    android:id="@+id/stayResting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/stayRest"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+                <TextView
+                    android:id="@+id/stayLocation2"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="2sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/medingLocation"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayResting" />
+
+                <ImageView
+                    android:id="@+id/casaGoogleMaps"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayLocation2"
+                    app:srcCompat="@drawable/casamaplocation" />
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaGoogleMaps" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomConstraint"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icStar2"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtRate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/mockRating"
+                    android:textColor="#141414"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/icStar2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icLike2"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtRate2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_like" />
+
+                <TextView
+                    android:id="@+id/txtReview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/mockReview"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/icLike2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalReviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:layout_marginBottom="25sp"
+                    android:scrollbarThumbHorizontal="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="235sp"
+                            android:layout_height="110sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="18sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:background="@color/white"
+                            app:cardCornerRadius="15sp">
+
+                            <TextView
+                                android:id="@+id/review1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:justificationMode="inter_word"
+                                android:padding="10sp"
+                                android:text="@string/casaReview1"
+                                android:textColor="#141414"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/seeMore1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingLeft="10sp"
+                                android:text="@string/showmore"
+                                android:textColor="#141414"
+                                android:textSize="12sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="235sp"
+                            android:layout_height="110sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="18sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:background="@color/white"
+                            app:cardCornerRadius="15sp">
+
+                            <TextView
+                                android:id="@+id/review2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:justificationMode="inter_word"
+                                android:padding="10sp"
+                                android:text="@string/casaReview2"
+                                android:textColor="#141414"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/seeMore2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingLeft="10sp"
+                                android:text="@string/showmore"
+                                android:textColor="#141414"
+                                android:textSize="12sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalReviews" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/stayAvail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/availability"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/casaAvail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/medingAvailable"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayAvail" />
+
+                <View
+                    android:id="@+id/line7"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaAvail" />
+
+                <!-- Cancellation -->
+
+                <TextView
+                    android:id="@+id/stayCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/cancel"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line7"/>
+
+                <TextView
+                    android:id="@+id/casaCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/cancelInfo"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayCancel" />
+
+                <View
+                    android:id="@+id/line8"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaCancel" />
+
+                <!-- House Rules -->
+
+                <TextView
+                    android:id="@+id/stayHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/houserules"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line8"/>
+
+                <TextView
+                    android:id="@+id/casaHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/houserulesinfoMeding"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stayHouse" />
+
+                <View
+                    android:id="@+id/line9"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/casaHouse" />
+
+                <!-- Safety & Property-->
+
+                <TextView
+                    android:id="@+id/staySafety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/safetynproperty"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line9"/>
+
+                <TextView
+                    android:id="@+id/casaSafety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/safetynpropertyinfo"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/staySafety" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstLayout">
+
+            <TextView
+                android:id="@+id/stayPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="₱ 3,864 / night"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/reserveNowBtn1"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/reserveNowBtn1"
+                android:layout_width="177dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/btn_hotel_bg"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/booknow"
+                app:backgroundTint="@color/stayButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

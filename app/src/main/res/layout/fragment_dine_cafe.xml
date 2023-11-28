@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/txtMostPopular"
+                android:id="@+id/txtCafe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -37,6 +37,7 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:scrollbarThumbHorizontal="@null"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

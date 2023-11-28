@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 public class DineAllFragment extends Fragment {
 
-    CardView hotPalmeras, popularPalmeras, preferPalmeras, hotSulyap, popularSulyap, preferSulyap, hotCasa, popularCasa, preferCasa ;
+    CardView hotPalmeras, popularPalmeras, preferPalmeras, hotSulyap, popularSulyap, preferSulyap, hotCasa, popularCasa, preferCasa;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.study.sanpablook;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

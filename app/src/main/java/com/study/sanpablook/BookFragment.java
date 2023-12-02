@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.study.sanpablook;
 
 import android.os.Bundle;
 

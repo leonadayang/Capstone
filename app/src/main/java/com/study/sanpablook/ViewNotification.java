@@ -1,14 +1,14 @@
-package com.example.capstone;
+package com.study.sanpablook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdminDashboard extends AppCompatActivity {
+public class ViewNotification extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_dashboard);
+        setContentView(R.layout.activity_view_notification);
     }
 }

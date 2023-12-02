@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.study.sanpablook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class DineCasaActivity extends AppCompatActivity {
+public class DineSulyapActivity extends AppCompatActivity {
     ImageButton btnShare, btnBack;
     Button reserveNowBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dine_casa);
+        setContentView(R.layout.activity_dine_sulyap);
+
         //buttons
         btnBack = findViewById(R.id.btnBack);
         btnShare = findViewById(R.id.btnShare);
@@ -36,7 +37,7 @@ public class DineCasaActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 String Body = "Share this App";
-                String Sub = "http://casa_location.google.com";
+                String Sub = "http://sulyap_location.google.com";
                 intent.putExtra(Intent.EXTRA_TEXT, Body);
                 intent.putExtra(Intent.EXTRA_TEXT, Sub);
                 startActivity(Intent.createChooser(intent, "Share using"));
@@ -48,15 +49,15 @@ public class DineCasaActivity extends AppCompatActivity {
 //        reserveNowBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent=new Intent(DineCasaActivity.this, com.example.capstone.DineCasaReservationActivity.class);
+//                Intent intent=new Intent(DineSulyapActivity.this, com.example.capstone.DineSulyapReservationActivity.class);
 //                startActivity(intent);
 //
 //            }
 //        });
     }
     //message button
-    public void btnMessageCasa(View v) {
-        String number = "09178126687";
+    public void btnMessageSulyap(View v) {
+        String number = "09171821483";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
     }
 }

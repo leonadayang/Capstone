@@ -48,8 +48,6 @@
     <string name="labelEditProfilePic">Edit profile picture</string>
     <string name="labelTakePhoto">Take a photo</string>
     <string name="labelChoosePhoto">Choose from gallery</string>
-    <!--for dine_reserve-->
-    <string name="labelAddPhoneNumberReservation">Add phone number</string>
 
     <!--CONTENT DESCRIPTIONS-->
     <string name="profilePicture">Profile picture</string>
@@ -128,7 +126,7 @@
     <string name="sulyap">Sulyap Gallery Café</string>
     <string name="casa">Casa San Pablo</string>
 
-    <!--REVIEWS AND RATINGS-->
+<!--REVIEWS AND RATINGS-->
     <!--NUMBER OF REVIEWS-->
     <string name="noOfReviewsPalmeras">68 reviews</string>
     <string name="noOfReviewsSulyap">78 reviews</string>
@@ -170,7 +168,6 @@
     <string name="where">Where you\'ll be dining</string><!--added apostrophe-->
     <string name="opening">Opening hours</string>
     <string name="yourReservation">Your Reservation</string>
-    <string name="dates">Dates</string>
     <string name="time">Time</string>
     <string name="guests">Guests</string>
     <string name="requirements">Requirements</string>
@@ -180,6 +177,10 @@
     <string name="messagePlaceDetails">Message for inquiries, who is coming with you, and what you need for the dine-in.</string>
     <string name="reservePhoneNumber">Phone Number</string>
     <string name="phoneNumberDetails">Add and confirm your phone number to get updates.</string>
+
+    <!--DINE RESERVATION REQUIREMENTS-->
+    <string name="labelAddPhoneNumberReservation">Add phone number</string>
+    <string name="enterPhone">Enter phone number</string>
 
     <!--OFFERS-->
     <string name="offers">What this place offers</string>

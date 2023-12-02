@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import android.view.ViewGroup;
@@ -39,11 +40,16 @@ public class DinePalmerasReservationActivity extends AppCompatActivity implement
     private Button dateButton;
     Button timeButton, phoneNumber, btnConfirm;
     int hour, minute;
+    TextView txtPhoneNumberDetails;
+    EditText editTextPhone1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dine_palmeras_reservation);
+
+        //textView
+        txtPhoneNumberDetails = (TextView) findViewById(R.id.txtPhoneNumberDetails);
 
         //date picker
         initDatePicker();
@@ -95,8 +101,10 @@ public class DinePalmerasReservationActivity extends AppCompatActivity implement
         dialog.setContentView(R.layout.dialog_dine_reserve_phone_number);
         LinearLayout btnSetPhoneNumber = dialog.findViewById(R.id.buttonsSetPhoneNumber);
         final EditText editTextPhone = dialog.findViewById(R.id.editTextPhone);
+        editTextPhone1 = dialog.findViewById(R.id.editTextPhone);
         Button cancelButton = dialog.findViewById(R.id.cancelButton);
         final Button saveButton = dialog.findViewById(R.id.saveButton);
+        saveButton.setEnabled(false);
 
         editTextPhone.addTextChangedListener(new TextWatcher() {
             @Override
@@ -126,10 +134,13 @@ public class DinePalmerasReservationActivity extends AppCompatActivity implement
                 dialog.dismiss();
             }
         });
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(DinePalmerasReservationActivity.this, "Save is clicked", Toast.LENGTH_SHORT).show();
+                txtPhoneNumberDetails.setText("Your number: " + editTextPhone1.getText());
+                Toast.makeText(DinePalmerasReservationActivity.this, "Phone number saved", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             }
         });
 
@@ -149,9 +160,9 @@ public class DinePalmerasReservationActivity extends AppCompatActivity implement
                  timeButton.setText(String.format(Locale.getDefault(), "%02d:%02d", hour, minute));
              }
          };
-         int style = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
+         int style = AlertDialog.THEME_HOLO_LIGHT;
          TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, false);
-         timePickerDialog.setTitle("Select Time of Reservation");
+         timePickerDialog.setTitle("Available time: 9AM to 9PM");
          timePickerDialog.show();
      }
 

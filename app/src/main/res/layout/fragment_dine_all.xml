@@ -57,6 +57,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -91,6 +93,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -125,6 +129,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -201,6 +207,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -235,6 +243,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -269,6 +279,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -345,6 +357,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -379,6 +393,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -413,6 +429,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
+                        android:foreground="@drawable/cardview_effect"
+                        android:clickable="true"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView

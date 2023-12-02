@@ -19,40 +19,40 @@
         android:theme="@style/Theme.Capstone"
         tools:targetApi="31">
         <activity
-            android:name=".ViewNotification"
+            android:name="sanpablook.study.sanpablook.ViewNotification"
             android:exported="false" />
         <activity
-            android:name=".AdminBookingDetails"
+            android:name="sanpablook.study.sanpablook.AdminBookingDetails"
             android:exported="false" />
         <activity
-            android:name=".AdminMenu"
+            android:name="sanpablook.study.sanpablook.AdminMenu"
             android:exported="false" />
         <activity
-            android:name=".AdminDashboard"
+            android:name="sanpablook.study.sanpablook.AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".DineCasaActivity"
+            android:name="sanpablook.study.sanpablook.DineCasaActivity"
             android:exported="false" />
         <activity
-            android:name=".DineSulyapActivity"
+            android:name="sanpablook.study.sanpablook.DineSulyapActivity"
             android:exported="false" />
         <activity
-            android:name=".DinePalmerasReservationActivity"
+            android:name="sanpablook.study.sanpablook.DinePalmerasReservationActivity"
             android:exported="false" />
         <activity
-            android:name=".DinePalmerasActivity"
+            android:name="sanpablook.study.sanpablook.DinePalmerasActivity"
             android:exported="false" />
         <activity
-            android:name=".UserNotifications"
+            android:name="sanpablook.study.sanpablook.UserNotifications"
             android:exported="false" />
         <activity
-            android:name=".ActivityHistory"
+            android:name="sanpablook.study.sanpablook.ActivityHistory"
             android:exported="false" />
         <activity
-            android:name=".UserSettings"
+            android:name="sanpablook.study.sanpablook.UserSettings"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="sanpablook.study.sanpablook.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <!--no rotation-->

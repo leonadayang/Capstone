@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".DineAlfrescoFragment">
+        tools:context="sanpablook.study.sanpablook.DineAlfrescoFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ALFrescoConstraint"

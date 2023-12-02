@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".DineCafeFragment">
+        tools:context="sanpablook.study.sanpablook.DineCafeFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mostPopularConstraint"

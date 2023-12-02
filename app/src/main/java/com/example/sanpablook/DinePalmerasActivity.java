@@ -1,7 +1,6 @@
-package com.example.capstone;
+package com.example.sanpablook;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class DinePalmerasActivity extends AppCompatActivity {
     ImageButton btnShare, btnBack;
@@ -51,7 +49,7 @@ public class DinePalmerasActivity extends AppCompatActivity {
         reserveNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(DinePalmerasActivity.this, com.example.capstone.DinePalmerasReservationActivity.class);
+                Intent intent=new Intent(DinePalmerasActivity.this, com.example.sanpablook.DinePalmerasReservationActivity.class);
                 startActivity(intent);
 
             }

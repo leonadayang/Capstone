@@ -1,23 +1,17 @@
-package com.example.capstone;
+package com.example.sanpablook;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
-import com.example.capstone.Adapter.SectionPagerAdapter;
+import com.example.sanpablook.Adapter.SectionPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.ArrayList;
 
 public class DineFragment extends Fragment {
     View myFragment;

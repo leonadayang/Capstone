@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.example.sanpablook;
 
 import org.junit.Test;
 

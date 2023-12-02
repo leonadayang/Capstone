@@ -1,6 +1,5 @@
-package com.example.capstone.Adapter;
+package com.example.sanpablook.Adapter;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

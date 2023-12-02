@@ -1,4 +1,4 @@
-package com.example.capstone;
+package com.example.sanpablook;
 
 import android.os.Bundle;
 
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BookFragment#newInstance} factory method to
+ * Use the {@link ProductsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BookFragment extends Fragment {
+public class ProductsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class BookFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BookFragment() {
+    public ProductsFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class BookFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Book.
+     * @return A new instance of fragment Products.
      */
     // TODO: Rename and change types and number of parameters
-    public static BookFragment newInstance(String param1, String param2) {
-        BookFragment fragment = new BookFragment();
+    public static ProductsFragment newInstance(String param1, String param2) {
+        ProductsFragment fragment = new ProductsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class BookFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_book, container, false);
+        return inflater.inflate(R.layout.fragment_products, container, false);
     }
 }
